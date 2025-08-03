@@ -4,11 +4,19 @@ import { useCaseStudyContext } from "../../../pages/CaseStudy/store/CaseStudyPro
 import { useParams } from "react-router-dom";
 import VerticalLine from "../VerticalLine/VerticalLine";
 import SummaryCard from "./components/SummaryCard/SummaryCard";
+import WhatHappened from "./components/WhatHappened/WhatHappened";
+import Competitors from "./components/Competitors/Competitors";
 const Summary = () => {
   const { id } = useParams();
   const workData = useCaseStudyContext();
-  const { preTitle, title, postTitle, summaryCard } =
-    workData?.summary[id] || {};
+  const {
+    preTitle,
+    title,
+    postTitle,
+    summaryCard,
+    whatHappened,
+    comeptitorsImg,
+  } = workData?.summary[id] || {};
 
   return (
     <>
@@ -96,6 +104,39 @@ const Summary = () => {
           />
         ))}
       </Box>
+      {id === "railway-case-study" && (
+        <Box
+          display="flex"
+          flexDirection="column"
+          mt="192px"
+          mb="100px"
+          ml="240px"
+        >
+          <Typography
+            sx={{
+              fontWeight: 600,
+              fontSize: "40px",
+              color: "#010101",
+              mb: "72px",
+            }}
+          >
+            What Happened?
+          </Typography>
+          <Box display={"flex"} flexWrap={"wrap"} gap="70px">
+            {whatHappened?.map((item, index) => (
+              <WhatHappened
+                key={index}
+                title={item.title}
+                description={item.description}
+                width={item.width}
+                ml={item.ml}
+              />
+            ))}
+          </Box>
+        </Box>
+      )}
+
+      <Competitors data={comeptitorsImg} />
     </>
   );
 };

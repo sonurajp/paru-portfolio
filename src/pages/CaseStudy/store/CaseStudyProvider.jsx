@@ -95,6 +95,72 @@ const CaseStudyProvider = ({ children }) => {
             "Over time, many users have become familiar with the IRCTC platform, preferring its interface and services over other apps. This familiarity reduces the learning curve and makes it easier to use.",
         },
       ],
+      whatHappened: [
+        {
+          title: "Cluttered Interface",
+          description:
+            "The interface can be overwhelming due to an abundance of options, menus, and links, making navigation difficult for users, especially those who are not tech-savvy.",
+          width: "389px",
+          ml: "0px",
+        },
+        {
+          title: "Slow loading times",
+          description:
+            "The website and app have historically faced slow loading times, particularly during peak hours or special ticket booking windows (like Tatkal). This can lead to frustration and difficulty in completing bookings.",
+          width: "382px",
+          ml: "119px",
+        },
+        {
+          title: "Complex booking ",
+          description:
+            "The ticket booking process involves multiple steps, which can be confusing. Users often have to navigate through several pages, each with different fields and options, leading to a cumbersome experience.",
+          width: "414px",
+          ml: "0px",
+        },
+        {
+          title: "Poor error handling",
+          description:
+            "Error messages are often not informative, leaving users unsure about what went wrong or how to correct it. This lack of clarity can lead to repeated errors and frustration.",
+          width: "387px",
+          ml: "94px",
+        },
+        {
+          title: "Unintuitive Payment Process",
+          description:
+            "The payment gateway can be unintuitive, with users often encountering issues such as session timeouts, failed transactions, and unclear instructions, leading to incomplete bookings.",
+          width: "405px",
+          ml: "0px",
+        },
+        {
+          title: "Inadequate Mobile Optimization",
+          description:
+            "While there is an app, the mobile web version of the site has been criticized for not being fully optimized, with elements that don’t fit well on smaller screens, making it hard to use on mobile devices.",
+          width: "387px",
+          ml: "103px",
+        },
+        {
+          title: "Limited Personalization",
+          description:
+            "The website lacks advanced personalization features, which could streamline the user experience by remembering user preferences, frequent journeys, or payment methods.",
+          width: "375px",
+          ml: "0px",
+        },
+        {
+          title: "Confusing Captchas",
+          description:
+            "The Captchas used during the booking process are often difficult to read, adding an unnecessary hurdle for users trying to complete their transactions quickly.",
+          width: "414px",
+          ml: "133px",
+        },
+      ],
+      comeptitorsImg: [
+        "https://ik.imagekit.io/Gdragon/Portfolio/IRCTC/Mask%20group-2.svg?updatedAt=1753628249095",
+        "https://ik.imagekit.io/Gdragon/Portfolio/IRCTC/Mask%20group-3.svg?updatedAt=1753628249112",
+        "https://ik.imagekit.io/Gdragon/Portfolio/IRCTC/Mask%20group-4.svg?updatedAt=1753628249033",
+        "https://ik.imagekit.io/Gdragon/Portfolio/IRCTC/Mask%20group-5.svg?updatedAt=1753628249194",
+        "https://ik.imagekit.io/Gdragon/Portfolio/IRCTC/Mask%20group-1.svg?updatedAt=1753628249088",
+        "https://ik.imagekit.io/Gdragon/Portfolio/IRCTC/Mask%20group-1.svg?updatedAt=1753628249088",
+      ],
     },
   };
   return (
