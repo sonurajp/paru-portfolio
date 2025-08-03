@@ -18,7 +18,6 @@ const SummaryCard = ({
         display: "flex",
         flexDirection: "column",
         gap: 1,
-        padding: "62px 40px",
       }}
     >
       <Typography

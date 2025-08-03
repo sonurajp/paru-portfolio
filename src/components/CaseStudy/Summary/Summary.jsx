@@ -60,25 +60,39 @@ const Summary = () => {
             {postTitle}
           </Typography>
         </Box>
-        <Box
-          display="flex"
-          gap="22px"
-          flexWrap="wrap"
-          justifyContent="center"
-          mt="100px"
+      </Box>
+
+      {id === "railway-case-study" && (
+        <Typography
+          sx={{
+            fontWeight: 600,
+            fontSize: "40px",
+            mt: "164px",
+            color: "#010101",
+            ml: "240px",
+          }}
         >
-          {summaryCard?.map((card, index) => (
-            <SummaryCard
-              key={index}
-              cardTitle={card.cardTitle}
-              cardDescription={card.cardDescription}
-              height="24.125rem"
-              width="19.0625rem"
-              mt="62px"
-              ml="40px"
-            />
-          ))}
-        </Box>
+          WHY IRCTC?
+        </Typography>
+      )}
+      <Box
+        display="flex"
+        gap="22px"
+        flexWrap="wrap"
+        mt={id === "railway-case-study" ? "56px" : "100px"}
+        ml="240px"
+      >
+        {summaryCard?.map((card, index) => (
+          <SummaryCard
+            key={index}
+            cardTitle={card.cardTitle}
+            cardDescription={card.cardDescription}
+            height="24.125rem"
+            width="19.0625rem"
+            mt="62px"
+            ml="40px"
+          />
+        ))}
       </Box>
     </>
   );
