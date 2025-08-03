@@ -11,6 +11,9 @@ const HealthyFoodGallery = () => {
           left: { xs: "16px", sm: "64px", md: "124px" },
           width: { xs: "90%", sm: "80%", md: "1160px" },
           maxWidth: "100%",
+          "@media (max-width:1280px)": {
+            left: "40px",
+          },
         }}
       >
         <Box

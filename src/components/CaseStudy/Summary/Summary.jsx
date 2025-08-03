@@ -136,7 +136,7 @@ const Summary = () => {
         </Box>
       )}
 
-      <Competitors data={comeptitorsImg} />
+      {id === "railway-case-study" && <Competitors data={comeptitorsImg} />}
     </>
   );
 };

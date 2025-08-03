@@ -15,7 +15,7 @@ const Competitors = ({ data }) => {
       </Typography>
       <Box display={"flex"} gap="116px" flexWrap="wrap">
         {data?.map((item, index) => (
-          <Box component={"img"} src={item} key={index} sx={{}} />
+          <Box component={"img"} src={item} key={index} />
         ))}
       </Box>
     </Box>

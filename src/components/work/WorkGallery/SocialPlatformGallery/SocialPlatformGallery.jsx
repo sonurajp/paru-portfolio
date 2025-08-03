@@ -15,6 +15,9 @@ const SocialPlatformGallery = () => {
           top: "340px",
           left: "124px",
           width: "1160px",
+          "@media (max-width:1280px)": {
+            left: "40px",
+          },
         }}
       >
         <Box display="flex" gap="12px" mb="16px" width="100%">
