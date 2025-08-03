@@ -24,18 +24,20 @@ const SummaryCard = ({
         sx={{
           fontWeight: 600,
           fontSize: "1.5rem",
-          mt: "62px",
+          mt: "40px",
           ml: "40px",
+          mb: "16px",
+          color: "#444444",
         }}
       >
         {cardTitle}
       </Typography>
       <Typography
         sx={{
-          fontWeight: 300,
-          fontSize: "1rem",
-          width: "191px",
+          fontSize: "16px",
+          width: "225px",
           ml: "40px",
+          color: "#555555",
         }}
       >
         {cardDescription}
