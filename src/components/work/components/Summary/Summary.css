@@ -1,0 +1,59 @@
+.head-typo {
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(193, 193, 193, 1);
+  text-align: left;
+}
+
+.content-typo {
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(68, 68, 68, 1);
+  white-space: pre-wrap;
+  text-align: left;
+  max-width: 387px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 3rem;
+  grid-template-areas:
+    "about-client responsibility project-overview"
+    "about-client  work-years  industry";
+}
+
+.about-client {
+  grid-area: about-client;
+}
+
+.responsibility {
+  grid-area: responsibility;
+  max-width: 266px;
+}
+
+.work-years {
+  grid-area: work-years;
+}
+
+.project-overview {
+  grid-area: project-overview;
+}
+
+.industry {
+  grid-area: industry;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "about-client"
+      "responsibility"
+      "work-years"
+      "project-overview"
+      "industry";
+  }
+}
