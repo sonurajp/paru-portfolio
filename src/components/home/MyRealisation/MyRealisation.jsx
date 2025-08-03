@@ -4,9 +4,11 @@ import MyRealisationBox from "./components/MyRealisationBox";
 const MyRealisationConfigs = [
   {
     headText: "Railway ticket booking",
+    route: "railway-case-study",
   },
   {
     headText: "Paradox of choices",
+    route: "paradox-case-study",
   },
   {
     headText: "Inflight Entertainment",
@@ -140,10 +142,14 @@ const MyRealisation = () => {
           </Typography>
         </Box>
         <Box display="flex">
-          <Box display="flex" flexDirection="column" sx={{ cursor: "pointer" }}>
+          <Box display="flex" flexDirection="column">
             {MyRealisationConfigs.map((config, index) => (
               <React.Fragment key={index}>
-                <MyRealisationBox headText={config.headText} index={index} />
+                <MyRealisationBox
+                  headText={config.headText}
+                  index={index}
+                  route={config?.route}
+                />
                 <hr
                   style={{
                     height: ".5px",

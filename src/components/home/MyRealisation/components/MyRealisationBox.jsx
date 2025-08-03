@@ -1,5 +1,6 @@
 import { Typography, Box, Chip } from "@mui/material";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const chipDataMap = {
   "Railway ticket booking": ["Research", "Userflow", "IA", "Wireframes"],
@@ -9,9 +10,9 @@ const chipDataMap = {
   "Sustainable UX": ["Define", "Analysis ", "Theory"],
 };
 
-const MyRealisationBox = ({ headText, index }) => {
+const MyRealisationBox = ({ headText, index, route }) => {
   const [hovered, setHovered] = useState(false);
-
+  const navigate = useNavigate();
   return (
     <Box
       display="flex"
@@ -19,9 +20,14 @@ const MyRealisationBox = ({ headText, index }) => {
       alignItems="center"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      sx={{ width: "1000px", transition: "all 0.3s ease" }}
+      sx={{
+        width: "1000px",
+        transition: "all 0.3s ease",
+        cursor: route && "pointer",
+      }}
       mb="32px"
       mt={index === 0 ? "0px" : "32px"}
+      onClick={route && (() => navigate(`case-study/${route}`))}
     >
       <Typography
         fontSize="40px"
