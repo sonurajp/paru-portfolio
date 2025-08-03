@@ -42,16 +42,22 @@ const ProjectShowcase = () => {
               </Typography>
             </Box>
           </Box>
-          <img
+          <Box
+            component="img"
             src={prjctData.bannerImage}
             loading="lazy"
             alt="Project Banner"
-            style={{
+            sx={{
               height: "100%",
-              width: prjctData.width,
+              width: prjctData.width || "100%",
               objectFit: "cover",
-              marginRight: "30px",
-              marginLeft: "235px",
+              mr: "1.875rem",
+              ml: "235px", // Keep default margin-left for 125% zoom
+
+              "@media (max-width:1280px)": {
+                ml: "40px",
+                width: "90%",
+              },
             }}
           />
         </Box>

@@ -7,15 +7,19 @@ const HealthyFoodGallery = () => {
       <Box
         sx={{
           position: "absolute",
-          top: "340px",
-          left: "124px",
-          width: "1160px",
+          top: { xs: "150px", sm: "250px", md: "340px" },
+          left: { xs: "16px", sm: "64px", md: "124px" },
+          width: { xs: "90%", sm: "80%", md: "1160px" },
+          maxWidth: "100%",
         }}
       >
-        <img
-          src={
-            "https://ik.imagekit.io/Gdragon/Portfolio/Nutri%20app/Image%20bg.svg?updatedAt=1753626680897"
-          }
+        <Box
+          component="img"
+          src="https://ik.imagekit.io/Gdragon/Portfolio/Nutri%20app/Image%20bg.svg?updatedAt=1753626680897"
+          alt="Nutri App Background"
+          sx={{
+            height: "auto",
+          }}
         />
       </Box>
     </WorkGalleryArchBackground>

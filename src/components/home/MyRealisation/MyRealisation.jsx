@@ -132,6 +132,7 @@ const MyRealisation = () => {
             sx={{
               opacity: animatedChars >= characters.length ? 1 : 0,
               transition: "opacity 0.8s ease-in-out 0.2s", // Fade in subtitle after title completes
+              color: "#343434",
             }}
             fontSize="1rem"
           >

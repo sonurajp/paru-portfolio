@@ -13,6 +13,9 @@ const SportsApplicationGallery = () => {
           top: "340px",
           left: "124px",
           width: "1160px",
+          "@media (max-width:1280px)": {
+            left: "40px",
+          },
         }}
       >
         <WorkGalleryText

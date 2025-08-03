@@ -9,7 +9,7 @@ const NavBar = ({ type = "home", logo = "" }) => {
     <Box
       display="flex"
       justifyContent="space-between"
-      backgroundColor={type === "home" ? "#F3F2EE" : "#ffffff"}
+      backgroundColor={type === "home" ? "#F3F2EE" : ""}
       sx={{
         // position: "sticky",
         // top: 0,
