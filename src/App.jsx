@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
 import Work from "./pages/Work/Work";
-import CaseStudy from "./pages/CaseStudy/CaseStudy";
+import { CaseStudy } from "./pages/CaseStudy";
 
 function App() {
   return (
