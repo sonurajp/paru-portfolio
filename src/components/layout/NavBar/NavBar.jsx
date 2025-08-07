@@ -1,18 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Box, Typography } from "@mui/material";
 import getInTouch from "../../../assets/getintouch.svg";
 import { useNavigate } from "react-router-dom";
 const NavBar = ({ type = "home", logo = "" }) => {
   const navText = ["ABOUT", "WORK", "RESUME"];
   const navigate = useNavigate();
+  const [bgColor, setBgColor] = useState("#F3F2EE");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      // Adjust this threshold based on your HeroSection height
+      const heroHeight = 10;
+
+      if (scrollY < heroHeight) {
+        setBgColor("#F3F2EE");
+      } else {
+        setBgColor("transparent");
+      }
+    };
+
+    handleScroll(); // Initialize on mount
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <Box
       display="flex"
       justifyContent="space-between"
-      backgroundColor={type === "home" ? "#F3F2EE" : ""}
+      backgroundColor={type === "home" ? bgColor : "transparent"}
+      // backgroundColor={bgColor}
       sx={{
-        // position: "sticky",
-        // top: 0,
+        position: "sticky",
+        top: 0,
         zIndex: 1000,
       }}
     >

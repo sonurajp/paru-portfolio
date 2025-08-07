@@ -42,6 +42,7 @@ const Summary = () => {
             {preTitle}
           </Typography>
           <Typography
+            component={"span"}
             sx={{
               color: "#010101",
               fontSize: "2.5rem",

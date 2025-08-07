@@ -26,15 +26,10 @@ html::-webkit-scrollbar {
 html {
   scrollbar-width: none;
 }
-@font-face {
-  font-family: "Geologica";
-  src: url("./assets/fonts/Geologica.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 
 body {
   margin: 0;
+  /* background-color: #f3f2ee; */
 
   font-family: "Geologica", sans-serif;
 }
