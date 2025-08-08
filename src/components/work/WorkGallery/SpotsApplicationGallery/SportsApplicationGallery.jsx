@@ -1,12 +1,12 @@
 import React from "react";
-import WorkGalleryArchBackground from "../components/WorkGalleryArchBackground/WorkGalleryArchBackground";
+import ArchBackground from "../../../ArchBackground/ArchBackground";
 import { Box } from "@mui/material";
 import CounterBox from "../components/CounterBox/CounterBox";
 import SportsApplicationGallery3 from "../../../../assets/SportsApplicationGallery3.svg";
 import WorkGalleryText from "../components/WorkGalleryText/WorkGalleryText";
 const SportsApplicationGallery = () => {
   return (
-    <WorkGalleryArchBackground height="4063px">
+    <ArchBackground height="4063px">
       <Box
         sx={{
           position: "absolute",
@@ -75,7 +75,7 @@ const SportsApplicationGallery = () => {
           />
         </Box>
       </Box>
-    </WorkGalleryArchBackground>
+    </ArchBackground>
   );
 };
 

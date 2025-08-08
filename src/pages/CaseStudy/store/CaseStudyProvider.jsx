@@ -163,8 +163,95 @@ const CaseStudyProvider = ({ children }) => {
       ],
     },
   };
+  const paradoxDetails = [
+    {
+      title: "AirBnB",
+      subtitle: "Curated Categories & Prioritized Listings",
+      description:
+        "Instead of overwhelming them with too many options, it displays a manageable number of listings at a time, ensuring a smooth experience. Nudges like “Only X left at this price!” encourage quick decisions, while prioritized “top picks” reduce unnecessary scrolling, making booking effortless and stress-free.",
+      img: "https://ik.imagekit.io/Gdragon/Portfolio/Paradox/Group%209896.svg?updatedAt=1753627957195",
+      top: "740px",
+      imgTop: "455px",
+      boxWidth: "514px",
+      contentWidth: "366px",
+    },
+
+    {
+      title: "Netflix",
+      subtitle: "Personalized Recommendations",
+      description:
+        "Instead of displaying all content at once, Netflix curates recommendations based on user behavior, showing a manageable selection to encourage quick decisions.",
+      img: "https://ik.imagekit.io/Gdragon/Portfolio/Paradox/Group%209897.svg?updatedAt=1753627958055",
+      top: "1922px",
+      imgTop: "1599px",
+      boxWidth: "361px",
+      contentWidth: "329px",
+    },
+    {
+      title: "Duolingo",
+      subtitle: "Limited Daily Lessons",
+      description:
+        "Duolingo caps the number of lessons per day, keeping learning manageable and encouraging consistent engagement without burnout.",
+      img: "https://ik.imagekit.io/Gdragon/Portfolio/Paradox/Group%209898.svg?updatedAt=1753627960438",
+      top: "3055px",
+      imgTop: "2743px",
+
+      boxWidth: "514px",
+      contentWidth: "352px",
+    },
+
+    {
+      title: "Apple",
+      subtitle: "Fewer Product Choices",
+      description:
+        "Apple offers only a few iPhone, iPad, and Mac models instead of dozens of variations. Reduces decision fatigue and makes purchasing easier.",
+      img: "https://ik.imagekit.io/Gdragon/Portfolio/Paradox/Group%209899.svg?updatedAt=1753627958962",
+      boxWidth: "514px",
+      contentWidth: "352px",
+      top: "4199px",
+      imgTop: "3887px",
+    },
+  ];
+  const ideaBox = [
+    {
+      title: "Hick’s Law",
+      subtitle:
+        "The time it takes to make a decision increases with the number of choices.",
+      description:
+        "Apple simplifies product selection by offering only a few models per category.",
+    },
+    {
+      title: "Miller’s Law",
+      subtitle:
+        "The average person can hold 7 ± 2 items in their working memory.",
+      description:
+        "Google Search surfaces featured snippets to avoid cognitive overload.",
+    },
+    {
+      title: "Fitts’ Law",
+      subtitle:
+        "The time to interact with an option depends on its size and distance. Fewer, larger buttons improve usability. ",
+      description:
+        "Netflix’s limited home screen options make selecting a show easier.",
+    },
+    {
+      title: "The Rule of Three",
+      subtitle:
+        "People process information best when presented in three key choices or categories. ",
+      description: "Uber keeps ride choices simple, Economy, Comfort, and XL.",
+    },
+    {
+      title: "KISS Principle ",
+      subtitle:
+        "Keep It Simple, Stupid - The time it takes to make a decision increases with the number of choices.",
+      description:
+        "Tinder’s one-swipe interface keeps interactions effortless.",
+    },
+  ];
   return (
-    <CaseStudyContext.Provider value={{ caseStudyIntro, summary }}>
+    <CaseStudyContext.Provider
+      value={{ caseStudyIntro, summary, paradoxDetails, ideaBox }}
+    >
       {children}
     </CaseStudyContext.Provider>
   );

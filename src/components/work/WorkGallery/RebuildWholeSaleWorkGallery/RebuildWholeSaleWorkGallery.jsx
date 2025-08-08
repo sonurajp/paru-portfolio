@@ -3,11 +3,11 @@ import React from "react";
 import RebuildWholeSaleWorkGalleryImage1 from "../../../../assets/RebuildWholeSaleWorkGalleryImage1.svg";
 import RebuildWholeSaleWorkGalleryImage2 from "../../../../assets/RebuildWholeSaleWorkGalleryImage2.svg";
 import RebuildWholeSaleWorkGalleryImage3 from "../../../../assets/RebuildWholeSaleWorkGalleryImage3.svg";
-import WorkGalleryArchBackground from "../components/WorkGalleryArchBackground/WorkGalleryArchBackground";
 import WorkGalleryText from "../components/WorkGalleryText/WorkGalleryText";
+import ArchBackground from "../../../ArchBackground/ArchBackground";
 const RebuildWholeSaleWorkGallery = () => {
   return (
-    <WorkGalleryArchBackground>
+    <ArchBackground>
       <Box
         sx={{
           position: "absolute",
@@ -33,7 +33,7 @@ const RebuildWholeSaleWorkGallery = () => {
         </Box>
         <img src={RebuildWholeSaleWorkGalleryImage3} />
       </Box>
-    </WorkGalleryArchBackground>
+    </ArchBackground>
   );
 };
 

@@ -1,9 +1,9 @@
 import React from "react";
-import WorkGalleryArchBackground from "../components/WorkGalleryArchBackground/WorkGalleryArchBackground";
 import { Box } from "@mui/material";
+import ArchBackground from "../../../ArchBackground/ArchBackground";
 const HealthyFoodGallery = () => {
   return (
-    <WorkGalleryArchBackground height="1029px">
+    <ArchBackground height="1029px">
       <Box
         sx={{
           position: "absolute",
@@ -25,7 +25,7 @@ const HealthyFoodGallery = () => {
           }}
         />
       </Box>
-    </WorkGalleryArchBackground>
+    </ArchBackground>
   );
 };
 

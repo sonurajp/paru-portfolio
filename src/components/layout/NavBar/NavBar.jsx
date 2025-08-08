@@ -6,7 +6,7 @@ const NavBar = ({ type = "home", logo = "" }) => {
   const navText = ["ABOUT", "WORK", "RESUME"];
   const navigate = useNavigate();
   const [bgColor, setBgColor] = useState("#F3F2EE");
-
+  const [navlogo, setNavLogo] = useState(logo);
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -18,6 +18,7 @@ const NavBar = ({ type = "home", logo = "" }) => {
         setBgColor("#F3F2EE");
       } else {
         setBgColor("transparent");
+        setNavLogo("");
       }
     };
 
@@ -39,7 +40,7 @@ const NavBar = ({ type = "home", logo = "" }) => {
       }}
     >
       <img
-        src={logo}
+        src={type === "home" ? navlogo : logo}
         style={{ marginLeft: "124px", marginTop: "18px", cursor: "pointer" }}
         onClick={() => {
           type === "work" ? navigate(-1) : "";

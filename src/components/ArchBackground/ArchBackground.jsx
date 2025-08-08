@@ -1,7 +1,7 @@
 import React from "react";
-import Arch from "../../../../../assets/Arch.svg";
+import Arch from "../../assets/Arch.svg";
 import { Box, Typography } from "@mui/material";
-const WorkGalleryArchBackground = ({ children, height = "100%" }) => {
+const ArchBackground = ({ children, height = "100%" }) => {
   return (
     <div style={{ position: "relative" }}>
       <img
@@ -18,4 +18,4 @@ const WorkGalleryArchBackground = ({ children, height = "100%" }) => {
   );
 };
 
-export default WorkGalleryArchBackground;
+export default ArchBackground;

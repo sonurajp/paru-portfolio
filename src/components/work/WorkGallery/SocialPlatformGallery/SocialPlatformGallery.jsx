@@ -1,5 +1,5 @@
 import React from "react";
-import WorkGalleryArchBackground from "../components/WorkGalleryArchBackground/WorkGalleryArchBackground";
+import ArchBackground from "../../../ArchBackground/ArchBackground";
 import { Box } from "@mui/material";
 import CounterBox from "../components/CounterBox/CounterBox";
 
@@ -8,7 +8,7 @@ import SocialPlatformGalleryImage5 from "../../../../assets/SocialPlatformGaller
 
 const SocialPlatformGallery = () => {
   return (
-    <WorkGalleryArchBackground height="2962px">
+    <ArchBackground height="2962px">
       <Box
         sx={{
           position: "absolute",
@@ -46,7 +46,7 @@ const SocialPlatformGallery = () => {
         </Box>
         <img src={SocialPlatformGalleryImage5} />
       </Box>
-    </WorkGalleryArchBackground>
+    </ArchBackground>
   );
 };
 
