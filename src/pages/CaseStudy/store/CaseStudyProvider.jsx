@@ -249,14 +249,128 @@ const CaseStudyProvider = ({ children }) => {
     },
   ];
   const personaDetails = {
-    title: "Persona 1 - Lakshmi, Corporate",
-    sub1: "Name",
-    desc1: "Lakshmi Asokan",
-    sub2: "Occupation",
-    desc2: "Works in a well known company as Electronics Engineer",
-    sub3: "Demographics",
-    desc3:
-      "33 years old \n Lives in Bangalore,\n Karnataka Takes care of her family in Kochi, for which travels once a month",
+    persona1: {
+      title: "Persona 1 - Lakshmi, Corporate",
+      sub1: "Name",
+      desc1: "Lakshmi Asokan",
+      sub2: "Occupation",
+      desc2: "Works in a well known company as Electronics Engineer",
+      sub3: "Demographics",
+      desc3:
+        "33 years old \n Lives in Bangalore,\n Karnataka Takes care of her family in Kochi, for which travels once a month",
+      card: [
+        {
+          title: "Goals",
+          desc: "She lives with her partner in Bangalore but wants to care for her parents who live in Kochi. Lakshmi primarily uses IRCTC for her pre-planned trips between Bangalore and Kochi. ",
+          height: "156px",
+          bgColor: "#FFFBF3",
+        },
+        {
+          title: "Pain point 1",
+          desc: "She doesn't want to waste a lot of time booking tickets. She prefers to simply enter her destination and find the right train to book. The process of making selections and completing payments frustrates her.",
+          height: "175px",
+          bgColor: "#FFE6EB",
+        },
+        {
+          title: "Goal 2",
+          desc: "Her hometown is only a 12-hour journey, so she ensures to visit on weekends and travels back Sunday night to be ready for work on Monday.",
+          height: "137px",
+          bgColor: "#FFFBF3",
+        },
+        {
+          title: "Pain point 2",
+          desc: "She finds the booking process too tedious with captchas and error messages, so she asks her husband to handle it for her, and he always books it correctly.",
+          height: "156px",
+          bgColor: "#FFE6EB",
+        },
+        {
+          title: "Goal 3",
+          desc: "Train is the only mode of transportation where she can access a toilet facility. So she consistently prefers a lower berth on the train for convenient access to the toilet facility.",
+          height: "156px",
+          bgColor: "#FFFBF3",
+        },
+        {
+          title: "Pain point 3",
+          desc: "She pre book tickets for many months with different dates which confuses her and sometimes misses her journey.",
+          height: "118px",
+          bgColor: "#FFE6EB",
+        },
+        {
+          title: "Goal 4",
+          desc: "She always keeps reminder of her upcoming journeys",
+          height: "99px",
+          bgColor: "#FFFBF3",
+        },
+        {
+          title: "Pain point 4",
+          desc: "Waiting for a train running late frustrates her more since she is a salary woman",
+          height: "118px",
+          bgColor: "#FFE6EB",
+        },
+        {
+          title: "Goal 5",
+          desc: "Lakshmi starts her days early and maintains a busy schedule during the weekdays. She handles her other tasks quickly and efficiently to return to focusing on her work.",
+          height: "156px",
+          bgColor: "#FFFBF3",
+        },
+      ],
+    },
+    persona2: {
+      title: "Persona 2 - Akhil, Corporate",
+      sub1: "Name",
+      desc1: "Akhil Kumar",
+      sub2: "Occupation",
+      desc2: "Owns his own clinic",
+      sub3: "Demographics",
+      desc3:
+        "24 years old \n Lives in Delhi \n Introvert, Likes to spend time inside his room",
+      card: [
+        {
+          title: "Pain point 1",
+          desc: "Akhil travels once a year, but he often struggles with booking tickets due to his lack of experience.",
+          height: "156px",
+          bgColor: "#FFE6EB",
+        },
+        {
+          title: "Goal 1",
+          desc: "Akhil takes a trip with his close circle of friends and family once a year, and he always prefers to book group tickets for these journeys.",
+          height: "156px",
+          bgColor: "#FFFBF3",
+        },
+
+        {
+          title: "Pain point 2",
+          desc: "He quickly loses patience with unnecessary time-consuming tasks and often finds it challenging to book tickets.",
+          height: "156px",
+          bgColor: "#FFE6EB",
+        },
+        {
+          title: "Goal 2",
+          desc: "Once he decides to travel, he arranges the trip around his friends' or family's available dates.",
+          height: "156px",
+          bgColor: "#FFFBF3",
+        },
+
+        {
+          title: "Pain point 3",
+          desc: "He’s a perfectionist, which is why he gets frustrated when train maps and running statuses are difficult to locate in the app.",
+          height: "156px",
+          bgColor: "#FFE6EB",
+        },
+        {
+          title: "Goal 3",
+          desc: "Akhil is full of enthusiasm and loves traveling by train, exploring rail maps, and learning the names of new stations along the way.",
+          height: "156px",
+          bgColor: "#FFFBF3",
+        },
+        {
+          title: "Pain point 4",
+          desc: "He gets easily distracted and so always prefer to remove or close ads that comes upfront while booing tickets",
+          height: "156px",
+          bgColor: "#FFFBF3",
+        },
+      ],
+    },
   };
   return (
     <CaseStudyContext.Provider

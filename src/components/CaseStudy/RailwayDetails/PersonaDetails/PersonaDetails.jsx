@@ -2,15 +2,19 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import { useCaseStudyContext } from "../../../../pages/CaseStudy/store/CaseStudyProvider";
 
-const PersonaDetails = () => {
-  const { personaDetails } = useCaseStudyContext();
+const PersonaDetails = ({
+  data,
+  color = "#969696",
+  fontSize = "15px",
+  ml = "92px",
+}) => {
   const TitleandDescription = ({ sub, desc }) => {
     return (
       <Box display={"flex"} flexDirection={"column"} gap="8px">
         <Typography fontWeight={700} fontSize={"22px"} color="#FFFFFF">
           {sub}
         </Typography>
-        <Typography fontSize={"15px"} color="#969696" whiteSpace="pre-line">
+        <Typography fontSize={fontSize} color={color} whiteSpace="pre-line">
           {desc}
         </Typography>
       </Box>
@@ -25,7 +29,7 @@ const PersonaDetails = () => {
         lineHeight={"72px"}
         color="#8A8A8A"
       >
-        {personaDetails.title}
+        {data.title}
       </Typography>
       <Box display={"flex"} mt={"40px"} gap="92px">
         <Box
@@ -35,18 +39,18 @@ const PersonaDetails = () => {
           maxWidth={"262px"}
         >
           {TitleandDescription({
-            sub: personaDetails.sub1,
-            desc: personaDetails.desc1,
+            sub: data.sub1,
+            desc: data.desc1,
           })}
           {TitleandDescription({
-            sub: personaDetails.sub2,
-            desc: personaDetails.desc2,
+            sub: data.sub2,
+            desc: data.desc2,
           })}
         </Box>
         <Box maxWidth={"314px"}>
           {TitleandDescription({
-            sub: personaDetails.sub3,
-            desc: personaDetails.desc3,
+            sub: data.sub3,
+            desc: data.desc3,
           })}
         </Box>
       </Box>
