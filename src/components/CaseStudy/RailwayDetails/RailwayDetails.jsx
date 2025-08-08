@@ -7,11 +7,22 @@ import PersonaCard from "./PersonaCard/PersonaCard";
 
 const RailwayDetails = () => {
   const {
-    personaDetails: { persona1, persona2 },
+    personaDetails: {
+      persona1,
+      persona2,
+      thinkEmpathyData1,
+      thinkEmpathyData2,
+      thinkEmpathyData3,
+      thinkEmpathyData4,
+      thinkEmpathyData5,
+      thinkEmpathyData6,
+      thinkEmpathyData7,
+      thinkEmpathyData8,
+    },
   } = useCaseStudyContext();
 
   return (
-    <ArchBackground height="6207px">
+    <ArchBackground height="7007px">
       <Box
         display={"flex"}
         sx={{
@@ -99,6 +110,90 @@ const RailwayDetails = () => {
         {persona2.card.map((data, index) => {
           return <PersonaCard data={data} key={index} index={index} />;
         })}
+      </Box>
+      <Box
+        sx={{
+          position: "absolute",
+          top: "3390px",
+          left: "295px",
+          display: "flex",
+          flexDirection: "column",
+          flexWrap: "wrap",
+          "@media (max-width:1280px)": {
+            left: "130px",
+          },
+        }}
+      >
+        <Typography
+          fontWeight={600}
+          fontSize={"48px"}
+          lineHeight={"72px"}
+          color="#FAFAFA"
+        >
+          Think Empathy - lakshmi
+        </Typography>
+        <Box display={"flex"} flexWrap="wrap" gap="24px" mt="80px">
+          {thinkEmpathyData1.map((data, index) => {
+            return <PersonaCard data={data} key={index} index={index} />;
+          })}
+        </Box>
+        <Box display={"flex"} flexWrap="wrap" gap="24px" mt="84px">
+          {thinkEmpathyData2.map((data, index) => {
+            return <PersonaCard data={data} key={index} index={index} />;
+          })}
+        </Box>
+        <Box display={"flex"} flexWrap="wrap" gap="24px" mt="75px">
+          {thinkEmpathyData3.map((data, index) => {
+            return <PersonaCard data={data} key={index} index={index} />;
+          })}
+        </Box>
+        <Box display={"flex"} flexWrap="wrap" gap="24px" mt="65px">
+          {thinkEmpathyData4.map((data, index) => {
+            return <PersonaCard data={data} key={index} index={index} />;
+          })}
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          position: "absolute",
+          top: "5170px",
+          left: "295px",
+          display: "flex",
+          flexDirection: "column",
+          flexWrap: "wrap",
+          "@media (max-width:1280px)": {
+            left: "130px",
+          },
+        }}
+      >
+        <Typography
+          fontWeight={600}
+          fontSize={"48px"}
+          lineHeight={"72px"}
+          color="#FAFAFA"
+        >
+          Think Empathy - Akhil
+        </Typography>
+        <Box display={"flex"} flexWrap="wrap" gap="24px" mt="80px">
+          {thinkEmpathyData5.map((data, index) => {
+            return <PersonaCard data={data} key={index} index={index} />;
+          })}
+        </Box>
+        <Box display={"flex"} flexWrap="wrap" gap="24px" mt="84px">
+          {thinkEmpathyData6.map((data, index) => {
+            return <PersonaCard data={data} key={index} index={index} />;
+          })}
+        </Box>
+        <Box display={"flex"} flexWrap="wrap" gap="24px" mt="75px">
+          {thinkEmpathyData7.map((data, index) => {
+            return <PersonaCard data={data} key={index} index={index} />;
+          })}
+        </Box>
+        <Box display={"flex"} flexWrap="wrap" gap="24px" mt="65px">
+          {thinkEmpathyData8.map((data, index) => {
+            return <PersonaCard data={data} key={index} index={index} />;
+          })}
+        </Box>
       </Box>
     </ArchBackground>
   );

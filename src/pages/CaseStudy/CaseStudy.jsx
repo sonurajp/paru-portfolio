@@ -23,6 +23,9 @@ const CaseStudy = () => {
               <RailwayDetails />
             </Box>
           )}
+          {id === "railway-case-study" && (
+            <Box mt={"144px"}>wire framing...</Box>
+          )}
         </Box>
         <Footer />
       </CaseStudyProvider>

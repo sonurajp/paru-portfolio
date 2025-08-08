@@ -371,6 +371,214 @@ const CaseStudyProvider = ({ children }) => {
         },
       ],
     },
+    thinkEmpathyData1: [
+      {
+        title: "Says 1",
+        desc: "It would have been been if i am able to book tickets faster",
+        height: "118px",
+        bgColor: "#E9E0C0",
+      },
+      {
+        title: "Says 2",
+        desc: "I love to know train status of my booked train",
+        height: "118px",
+        bgColor: "#E9E0C0",
+      },
+      {
+        title: "Says 3",
+        desc: "Its hard to get lower berth",
+        height: "118px",
+        bgColor: "#E9E0C0",
+      },
+      {
+        title: "Says 4",
+        desc: "My husband is of great help booking my preplanned trips",
+        height: "118px",
+        bgColor: "#E9E0C0",
+      },
+    ],
+    thinkEmpathyData2: [
+      {
+        title: "Thinks 1",
+        desc: "Is it really worth to spend time here while there are many other apps?",
+        height: "118px",
+        bgColor: "#BDE2BB",
+      },
+      {
+        title: "Thinks 2",
+        desc: "Is it safe and clean travel on my train? I wish i could easily get a lower berth",
+        height: "118px",
+        bgColor: "#BDE2BB",
+      },
+      {
+        title: "Thinks 3",
+        desc: "It is too much effort to go through my bookings",
+        height: "118px",
+        bgColor: "#BDE2BB",
+      },
+      {
+        title: "Thinks 4",
+        desc: "Am i relying on my partner too much?",
+        height: "118px",
+        bgColor: "#BDE2BB",
+      },
+    ],
+    thinkEmpathyData3: [
+      {
+        title: "Feels 1",
+        desc: "Feels anxious and overwhelmed while booking tickets",
+        height: "118px",
+        bgColor: "#C3CFE2",
+      },
+      {
+        title: "Feels 2",
+        desc: "Feels frustrated waiting for the delayed train in platform",
+        height: "118px",
+        bgColor: "#C3CFE2",
+      },
+      {
+        title: "Feels 3",
+        desc: "Feels stressed to travel night on trains and anxious to sleep on upper berth",
+        height: "118px",
+        bgColor: "#C3CFE2",
+      },
+      {
+        title: "Feels 4",
+        desc: "Feels embarrassed to depend pon someone to book tickets and it makes me feel useless",
+        height: "118px",
+        bgColor: "#C3CFE2",
+      },
+    ],
+    thinkEmpathyData4: [
+      {
+        title: "Does 1",
+        desc: "Go through other apps to easily book tickets",
+        height: "118px",
+        bgColor: "#D3C2CF",
+      },
+      {
+        title: "Does 2",
+        desc: "Listens to music, grab some snack waiting hours for the delayed train",
+        height: "118px",
+        bgColor: "#D3C2CF",
+      },
+      {
+        title: "Does 3",
+        desc: "Always carry wet wipes she also asks ttr for a berth change",
+        height: "118px",
+        bgColor: "#D3C2CF",
+      },
+      {
+        title: "Does 4",
+        desc: "Buying gifts to encourage husband to continue booking for her",
+        height: "118px",
+        bgColor: "#D3C2CF",
+      },
+    ],
+    thinkEmpathyData5: [
+      {
+        title: "Says 1",
+        desc: "I will go for a trip to Goa with my friends",
+        height: "118px",
+        bgColor: "#E9E0C0",
+      },
+      {
+        title: "Says 2",
+        desc: "Everyone will be alright booking tickets for night travel",
+        height: "118px",
+        bgColor: "#E9E0C0",
+      },
+      {
+        title: "Says 3",
+        desc: "I want to check maps and running status of my train",
+        height: "118px",
+        bgColor: "#E9E0C0",
+      },
+      {
+        title: "Says 4",
+        desc: "Those ads are distracting gthe purpose of my actions",
+        height: "118px",
+        bgColor: "#E9E0C0",
+      },
+    ],
+    thinkEmpathyData6: [
+      {
+        title: "Thinks 1",
+        desc: "I am worried if i can compete the process of group booking",
+        height: "118px",
+        bgColor: "#BDE2BB",
+      },
+      {
+        title: "Thinks 2",
+        desc: "Will i be able to book tickets in time?",
+        height: "118px",
+        bgColor: "#BDE2BB",
+      },
+      {
+        title: "Thinks 3",
+        desc: "Where can i find rail maps and running status?",
+        height: "118px",
+        bgColor: "#BDE2BB",
+      },
+      {
+        title: "Thinks 4",
+        desc: "How to close all ads",
+        height: "118px",
+        bgColor: "#BDE2BB",
+      },
+    ],
+    thinkEmpathyData7: [
+      {
+        title: "Feels 1",
+        desc: "Feels excited for the trip with my friends",
+        height: "118px",
+        bgColor: "#C3CFE2",
+      },
+      {
+        title: "Feels 2",
+        desc: "It is so frustrating to select trains by time",
+        height: "118px",
+        bgColor: "#C3CFE2",
+      },
+      {
+        title: "Feels 3",
+        desc: "How annoying it is to find PNR status and rail maps in this app",
+        height: "118px",
+        bgColor: "#C3CFE2",
+      },
+      {
+        title: "Feels 4",
+        desc: "Feels frustrated to get distracted with these ads positioning",
+        height: "118px",
+        bgColor: "#C3CFE2",
+      },
+    ],
+    thinkEmpathyData8: [
+      {
+        title: "Does 1",
+        desc: "Go through internet to find amazong spots in Goa",
+        height: "118px",
+        bgColor: "#D3C2CF",
+      },
+      {
+        title: "Does 2",
+        desc: "Calling friend to know their opinion on the same",
+        height: "118px",
+        bgColor: "#D3C2CF",
+      },
+      {
+        title: "Does 3",
+        desc: "Asking his roomate to help knowing where it is",
+        height: "118px",
+        bgColor: "#D3C2CF",
+      },
+      {
+        title: "Does 4",
+        desc: "Use another app for booking tickets",
+        height: "118px",
+        bgColor: "#D3C2CF",
+      },
+    ],
   };
   return (
     <CaseStudyContext.Provider
