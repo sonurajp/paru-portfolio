@@ -24,7 +24,7 @@ const CaseStudy = () => {
               <RailwayDetails />
             </Box>
           )}
-          <WireFraming />
+          {id === "railway-case-study" && <WireFraming />}
           <Footer />
         </Box>
       </CaseStudyProvider>
