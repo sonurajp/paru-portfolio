@@ -7,9 +7,9 @@ import Summary from "../../components/CaseStudy/Summary/Summary";
 import { Box } from "@mui/material";
 import ParadoxDetails from "../../components/CaseStudy/ParadoxDetails/ParadoxDetails";
 import { useParams } from "react-router-dom";
+import RailwayDetails from "../../components/CaseStudy/RailwayDetails/RailwayDetails";
 const CaseStudy = () => {
   const { id } = useParams();
-  console.log({ id });
   return (
     <>
       <CaseStudyProvider>
@@ -18,6 +18,11 @@ const CaseStudy = () => {
           <CaseStudyIntroduction />
           <Summary />
           {id === "paradox-case-study" && <ParadoxDetails />}
+          {id === "railway-case-study" && (
+            <Box mt={"144px"}>
+              <RailwayDetails />
+            </Box>
+          )}
         </Box>
         <Footer />
       </CaseStudyProvider>

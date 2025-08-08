@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import { Box } from "@mui/material";
 import { Footer, NavBar } from "../../components/layout";

@@ -1,4 +1,4 @@
-import { sub, summary, title } from "framer-motion/client";
+import { desc, sub, summary, title } from "framer-motion/client";
 import React, { createContext, useContext } from "react";
 import { useParams } from "react-router-dom";
 
@@ -248,9 +248,25 @@ const CaseStudyProvider = ({ children }) => {
         "Tinder’s one-swipe interface keeps interactions effortless.",
     },
   ];
+  const personaDetails = {
+    title: "Persona 1 - Lakshmi, Corporate",
+    sub1: "Name",
+    desc1: "Lakshmi Asokan",
+    sub2: "Occupation",
+    desc2: "Works in a well known company as Electronics Engineer",
+    sub3: "Demographics",
+    desc3:
+      "33 years old \n Lives in Bangalore,\n Karnataka Takes care of her family in Kochi, for which travels once a month",
+  };
   return (
     <CaseStudyContext.Provider
-      value={{ caseStudyIntro, summary, paradoxDetails, ideaBox }}
+      value={{
+        caseStudyIntro,
+        summary,
+        paradoxDetails,
+        ideaBox,
+        personaDetails,
+      }}
     >
       {children}
     </CaseStudyContext.Provider>
