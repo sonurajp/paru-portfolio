@@ -9,7 +9,7 @@ const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
 const Footer = () => (
   <Box
     sx={{
-      background: "#F7F6F3",
+      background: "#F3F2EE",
       height: "447px",
       display: "flex",
       flexDirection: "column",

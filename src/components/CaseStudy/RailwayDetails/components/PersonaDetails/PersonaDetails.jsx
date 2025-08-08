@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import { useCaseStudyContext } from "../../../../pages/CaseStudy/store/CaseStudyProvider";
+import { useCaseStudyContext } from "../../../../../pages/CaseStudy/store/CaseStudyProvider";
 
 const PersonaDetails = ({
   data,

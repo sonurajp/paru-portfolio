@@ -8,6 +8,7 @@ import { Box } from "@mui/material";
 import ParadoxDetails from "../../components/CaseStudy/ParadoxDetails/ParadoxDetails";
 import { useParams } from "react-router-dom";
 import RailwayDetails from "../../components/CaseStudy/RailwayDetails/RailwayDetails";
+import WireFraming from "../../components/CaseStudy/RailwayDetails/components/WireFraming/WireFraming";
 const CaseStudy = () => {
   const { id } = useParams();
   return (
@@ -23,11 +24,9 @@ const CaseStudy = () => {
               <RailwayDetails />
             </Box>
           )}
-          {id === "railway-case-study" && (
-            <Box mt={"144px"}>wire framing...</Box>
-          )}
+          <WireFraming />
+          <Footer />
         </Box>
-        <Footer />
       </CaseStudyProvider>
     </>
   );

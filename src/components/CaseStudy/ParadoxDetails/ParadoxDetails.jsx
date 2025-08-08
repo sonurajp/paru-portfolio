@@ -1,10 +1,10 @@
 import React from "react";
 import ArchBackground from "../../ArchBackground/ArchBackground";
 import { Box, Typography } from "@mui/material";
-import ParadoxDetailsCard from "./ParadoxDetailsCard/ParadoxDetailsCard";
+import ParadoxDetailsCard from "./components/ParadoxDetailsCard/ParadoxDetailsCard";
 import { useParams } from "react-router-dom";
 import { useCaseStudyContext } from "../../../pages/CaseStudy/store/CaseStudyProvider";
-import ParadoxIdeaCard from "./ParadoxIdeaCard/ParadoxIdeaCard";
+import ParadoxIdeaCard from "./components/ParadoxIdeaCard/ParadoxIdeaCard";
 
 const ParadoxDetails = () => {
   const { id } = useParams();
