@@ -1,5 +1,6 @@
 .skill-section {
   display: flex;
+
   .MuiTypography-root.title {
     font-weight: 700;
     font-size: 40px;

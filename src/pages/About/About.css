@@ -18,9 +18,24 @@
       margin-left: 4px;
       transition: width 0.8s ease;
     }
+    .story-content {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+      width: 100%;
+    }
+    .so-far-box {
+      margin-left: 6%;
+    }
+    .story-content-typo {
+      white-space: pre-line;
+      margin-top: 41px;
+      font-size: 18px;
+      color: #222222;
+    }
 
     .story-divider.extend {
-      width: 70%;
+      width: 93%;
     }
     .so-far-typo {
       margin-top: 19px;
