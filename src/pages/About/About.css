@@ -1,0 +1,33 @@
+.about-content {
+  .MuiTypography-root {
+    color: #010101;
+  }
+  margin-left: 124px;
+  .MuiTypography-root.thestory {
+    font-weight: 700;
+    font-size: 80px;
+  }
+  .about-section {
+    margin-top: 99px;
+    margin-bottom: 155px;
+    .story-divider {
+      margin-top: 19px;
+      width: 205px;
+      height: 8px;
+      background-color: #ff5832;
+      margin-left: 4px;
+      transition: width 0.8s ease;
+    }
+
+    .story-divider.extend {
+      width: 70%;
+    }
+    .so-far-typo {
+      margin-top: 19px;
+      font-weight: 700;
+      font-size: 80px;
+      margin-left: 70%;
+      white-space: nowrap;
+    }
+  }
+}
