@@ -45,4 +45,26 @@
       white-space: nowrap;
     }
   }
+  .skill-divider {
+    width: 1008px;
+    height: 1px;
+    background-color: #b0b0b0;
+    margin: 80px 0 80px 100px;
+  }
+  .strength-box {
+    display: flex;
+    .strength-typo {
+      font-weight: 700;
+      font-size: 40px;
+      margin-left: 140px;
+    }
+    .strength-content-typo {
+      margin-left: 65px;
+      text-align: center;
+      margin-top: 10px;
+
+      font-size: 16px;
+      color: #444444;
+    }
+  }
 }

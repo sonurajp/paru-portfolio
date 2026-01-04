@@ -19,9 +19,11 @@ const SkillsandExperience = ({ type }) => {
 
   return (
     <Box className="skill-section">
-      <Typography className="title">
-        {type === "skills" ? "SKILLS" : "EXPERIENCE"}
-      </Typography>
+      <Box className="skill-title-box">
+        <Typography className="title">
+          {type === "skills" ? "SKILLS" : "EXPERIENCE"}
+        </Typography>
+      </Box>
       <Box className="skills-container">
         {data.aboutTitle.map((title) => (
           <>

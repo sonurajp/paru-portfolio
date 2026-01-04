@@ -62,8 +62,34 @@ const About = () => {
           </Box>
           {/* <Box ml="115px"> */}
           <SkillsandExperience type="skills" />
+          <div className="skill-divider" />
           {/* </Box> */}
           <SkillsandExperience type="experience" />
+          <div className="skill-divider" />
+
+          <Box className="strength-box">
+            <Typography className="strength-typo">STRENGTHS</Typography>
+            <Box
+              sx={{ display: "flex", gap: 2, flexDirection: "column", ml: 2 }}
+            >
+              {[
+                "Deep understanding of user needs and behaviors",
+                "Crafting intuitive solutions to complex challenges",
+                "Aligning user goals with business objectives",
+                "Powerful use of iconography, layout, and illustration",
+              ].map((data, index) => (
+                <Box key={index} sx={{ display: "flex" }}>
+                  <Typography
+                    className="strength-content-typo"
+                    sx={{ display: "flex", gap: 2 }}
+                  >
+                    <span>•</span>
+                    {data}
+                  </Typography>
+                </Box>
+              ))}
+            </Box>
+          </Box>
         </Box>
       </AboutProvider>
     </>
