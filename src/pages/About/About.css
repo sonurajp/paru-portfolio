@@ -32,6 +32,7 @@
       margin-top: 41px;
       font-size: 18px;
       color: #222222;
+      animation: fadeIn 1s ease-in-out;
     }
 
     .story-divider.extend {
@@ -66,5 +67,22 @@
       font-size: 16px;
       color: #444444;
     }
+  }
+  .future-box {
+    display: flex;
+    .future-typo {
+      font-weight: 700;
+      font-size: 40px;
+      margin-left: 255px;
+      margin-right: 80px;
+    }
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

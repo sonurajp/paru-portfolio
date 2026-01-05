@@ -5,6 +5,8 @@ import NavBar from "../../components/layout/NavBar/NavBar";
 import { Box, Typography } from "@mui/material";
 import AboutProvider from "./store/AboutProvider";
 import SkillsandExperience from "./SkillsandExperience/SkillsandExperience";
+import Future from "./Future/Future";
+import Footer from "./../../components/layout/Footer/Footer";
 
 const About = () => {
   useEffect(() => window.scrollTo(0, 0), []);
@@ -90,8 +92,14 @@ const About = () => {
               ))}
             </Box>
           </Box>
+          <div className="skill-divider" />
+          <Box className="future-box">
+            <Typography className="future-typo">Future</Typography>
+            <Future />
+          </Box>
         </Box>
       </AboutProvider>
+      <Footer />
     </>
   );
 };

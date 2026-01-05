@@ -45,6 +45,17 @@ const AboutProvider = ({ children, aboutData }) => {
     "Design & Prototyping": `Identifying pain points and opportunities for improvement. Iterative testing and data-
     driven decision-making. Balancing business goals with user needs`,
   };
+  const future = {
+    "5 years later": `I envision building my own design studio or leading UX in a product company that 
+    values design as a core strength. In the next five years, I aim to grow into a strategic 
+    UX leader who not only creates impactful user experiences but also drives product 
+    vision and design culture. I see myself leading cross-functional design teams,
+     mentoring junior designers, and contributing to inclusive, human-centered innovation.`,
+    Business: `Over the next years, I envision building a multidisciplinary creative brand that fuses
+     fashion, product design, and beauty innovation—rooted in self-expression, 
+     sustainability, and cultural aesthetics. As a product designer i want to make sure to
+      bring out functional sustainable products.`,
+  };
   return (
     <AboutContext.Provider
       value={{
@@ -54,6 +65,7 @@ const AboutProvider = ({ children, aboutData }) => {
         experieneTitle,
         expYears,
         expContent,
+        future,
       }}
     >
       {children}
