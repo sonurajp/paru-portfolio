@@ -13,6 +13,7 @@ const About = () => {
   useEffect(() => {
     const divider = document.querySelector(".story-divider");
     const section = document.querySelector(".about-section");
+    const content = document.querySelector(".story-content-typo");
 
     let lastScrollY = window.scrollY;
     let triggered = false;
@@ -29,6 +30,7 @@ const About = () => {
 
       if (isInView) {
         divider.classList.add("extend");
+        content.classList.add("visible");
         triggered = true;
         window.removeEventListener("scroll", onScroll);
       }
