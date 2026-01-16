@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Box, Typography } from "@mui/material";
 import uiux from "../../../assets/uiux.svg"; // Adjust the import path as necessary
 import { useNavigate } from "react-router-dom";
+import useLazloadHook from "../../../hooks/useLazloadHook";
 const ProjectSection = ({
   bgText,
   projectName,
@@ -31,6 +32,8 @@ const ProjectSection = ({
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  const imgRef = useRef(null);
+  const { loadImage } = useLazloadHook(imgRef);
 
   return (
     <Box
@@ -91,7 +94,6 @@ const ProjectSection = ({
               "&:hover": { opacity: 0.85 },
             }}
             key={index}
-
             onClick={() => {
               navigate(`/work/${routeId}`);
               window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -100,7 +102,6 @@ const ProjectSection = ({
             tabIndex={0}
           >
             {words}
-            
           </Typography>
         ))}
 
@@ -116,28 +117,30 @@ const ProjectSection = ({
       </Box>
       <Box
         className="image-wrapper"
+        ref={imgRef}
         sx={{
           position: "relative",
           display: "inline-block",
         }}
-       // mr={bgText === " Social Platform for Education" ? "0px" : "202px"}
-       mr="auto"
+        // mr={bgText === " Social Platform for Education" ? "0px" : "202px"}
+        mr="auto"
         mt="89px"
       >
-        <img
-          src={image}
-          alt="metro"
-          loading="lazy"
-          style={{
-            height: imgHieght,
-            width: imgWidth,
-            display: "block",
-            zIndex: 1,
-            position: "relative",
-            //cursor: "pointer",
-          }}
-          //onClick={() => navigate(`/work/${routeId}`)}
-        />
+        {loadImage && (
+          <img
+            src={image}
+            alt="metro"
+            style={{
+              height: imgHieght,
+              width: imgWidth,
+              display: "block",
+              zIndex: 1,
+              position: "relative",
+              //cursor: "pointer",
+            }}
+            //onClick={() => navigate(`/work/${routeId}`)}
+          />
+        )}
 
         <div
           className="back-hover"

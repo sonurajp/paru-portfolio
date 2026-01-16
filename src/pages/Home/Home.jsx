@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import { Footer, NavBar } from "../../components/layout";
 import {
   HeroSection,
