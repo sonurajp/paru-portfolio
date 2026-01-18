@@ -36,8 +36,8 @@ const NavBar = ({ type = "home", logo = "", onWorkClick = () => {} }) => {
       justifyContent="space-between"
       backgroundColor={type === "home" ? bgColor : "transparent"}
       sx={{
-        position: type === "home" ? "sticky" : "static",
-        top: type === "home" ? 0 : "auto",
+        position: "sticky",
+        top: 0,
         zIndex: 1000,
       }}
     >

@@ -9,21 +9,20 @@ import Future from "./Future/Future";
 import Footer from "./../../components/layout/Footer/Footer";
 
 const About = () => {
-  useEffect(() => window.scrollTo(0, 0), []);
   useEffect(() => {
     const divider = document.querySelector(".story-divider");
     const section = document.querySelector(".about-section");
     const content = document.querySelector(".story-content-typo");
 
-    let lastScrollY = window.scrollY;
     let triggered = false;
+    let scrollUnlocked = false;
 
-    const onScroll = () => {
-      const currentScrollY = window.scrollY;
-      const scrollingDown = currentScrollY > lastScrollY;
-      lastScrollY = currentScrollY;
+    const onWheel = (e) => {
+      if (!scrollUnlocked) {
+        e.preventDefault(); // 🚨 HARD STOP SCROLL
+      }
 
-      if (!scrollingDown || triggered) return;
+      if (triggered) return;
 
       const rect = section.getBoundingClientRect();
       const isInView = rect.top < window.innerHeight && rect.bottom > 0;
@@ -31,12 +30,57 @@ const About = () => {
       if (isInView) {
         divider.classList.add("extend");
         content.classList.add("visible");
+
         triggered = true;
+
+        // 🔓 Unlock scroll AFTER animation
+        setTimeout(() => {
+          scrollUnlocked = true;
+          window.removeEventListener("wheel", onWheel);
+        }, 800);
+      }
+    };
+
+    window.addEventListener("wheel", onWheel, { passive: false });
+
+    return () => window.removeEventListener("wheel", onWheel);
+  }, []);
+
+  useEffect(() => window.scrollTo(0, 0), []);
+
+  useEffect(() => {
+    const divider = document.querySelector(".story-divider");
+    const section = document.querySelector(".about-section");
+    const content = document.querySelector(".story-content-typo");
+
+    let triggered = false;
+
+    const onScroll = () => {
+      if (triggered) return;
+
+      const rect = section.getBoundingClientRect();
+      const isInView = rect.top < window.innerHeight && rect.bottom > 0;
+
+      if (isInView) {
+        // 🔥 Trigger animation
+        divider.classList.add("extend");
+        content.classList.add("visible");
+
+        triggered = true;
+
+        // ⛔ Stop scroll temporarily
+        document.body.style.overflow = "hidden";
+
+        // ✅ Re-enable scroll after animation
+        setTimeout(() => {
+          document.body.style.overflow = "";
+        }, 800); // match your CSS animation duration
+
         window.removeEventListener("scroll", onScroll);
       }
     };
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: false });
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -53,8 +97,8 @@ const About = () => {
             <div className="story-divider" />
             <Box className="story-content">
               <Typography className="story-content-typo">
-                {`After completing her graduation in Visual Communication, I started 
-                  my career as a Visualiser. Went on to pursue apost-graduation in
+                {`After completing my graduation in Visual Communication, I started 
+                  my career as a Visualiser. Went on to pursue a post-graduation in
                   Communication, followed by a Diploma in UX/UI Design. In December 
                   2019, joined a design firm where she focusedon in-house experience 
                   design as part of the UX/UI team.`}
@@ -64,12 +108,8 @@ const About = () => {
               </Box>
             </Box>
           </Box>
-          {/* <Box ml="115px"> */}
           <SkillsandExperience type="skills" />
-          <div className="skill-divider" />
-          {/* </Box> */}
           <SkillsandExperience type="experience" />
-          <div className="skill-divider" />
 
           <Box className="strength-box">
             <Typography className="strength-typo">STRENGTHS</Typography>
@@ -94,14 +134,13 @@ const About = () => {
               ))}
             </Box>
           </Box>
-          <div className="skill-divider" />
           <Box className="future-box">
-            <Typography className="future-typo">Future</Typography>
+            <Typography className="future-typo">FUTURE</Typography>
             <Future />
           </Box>
         </Box>
       </AboutProvider>
-      <Footer />
+      <Footer type="about" />
     </>
   );
 };
