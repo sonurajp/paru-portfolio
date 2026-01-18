@@ -21,7 +21,7 @@ const MyRealisationBox = ({ headText, index, route }) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       sx={{
-        width: "1000px",
+        width: "78vw",
         transition: "all 0.3s ease",
         cursor: route ? "pointer" : "default",
       }}
@@ -37,6 +37,7 @@ const MyRealisationBox = ({ headText, index, route }) => {
         sx={{
           color: hovered ? "#FF5832" : "#343434",
           transition: "color 0.3s ease",
+          whiteSpace: "nowrap",
         }}
       >
         {headText}
@@ -47,6 +48,7 @@ const MyRealisationBox = ({ headText, index, route }) => {
         gap={1}
         justifyContent="flex-end"
         sx={{
+          flex: 1,
           pointerEvents: "none", // 👈 CRITICAL
         }}
       >

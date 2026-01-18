@@ -21,11 +21,11 @@ const Footer = () => (
     <img
       src={FooterImageHover}
       className="footer-image-slide"
-     /* onMouseEnter={(e) => {
+      /* onMouseEnter={(e) => {
         e.currentTarget.src = FooterImageHover;
         e.currentTarget.classList.add("footer-image-slide");
       }}*/
-     /* onMouseLeave={(e) => {
+      /* onMouseLeave={(e) => {
         e.currentTarget.src = FooterImage;
         e.currentTarget.classList.remove("footer-image-slide");
       }}*/
@@ -42,13 +42,13 @@ const Footer = () => (
         width: "100%",
         display: "flex",
         alignItems: "center",
+        justifyContent: "space-around",
       }}
-      ml="140px"
     >
-      <Typography fontSize="14px" mr="198px">
+      <Typography fontSize="14px">
         parvathy.26@outlook.com &nbsp;+91 9500485529
       </Typography>
-      <Box mr="338px">
+      <Box mr={25}>
         <a
           href="https://behance.net/"
           target="_blank"
@@ -75,7 +75,12 @@ const Footer = () => (
           Linkedin
         </a>
       </Box>
-      <Typography sx={{ color: "rgba(118, 118, 118, 1)", fontSize: "14px" }}>
+      <Typography
+        sx={{
+          color: "rgba(118, 118, 118, 1)",
+          fontSize: "14px",
+        }}
+      >
         Designed by Parvathy T A
       </Typography>
     </Box>

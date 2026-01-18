@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Box, Typography } from "@mui/material";
 import getInTouch from "../../../assets/getintouch.svg";
+
 import { useNavigate } from "react-router-dom";
-const NavBar = ({ type = "home", logo = "" }) => {
+const NavBar = ({ type = "home", logo = "", onWorkClick = () => {} }) => {
   const navText = ["ABOUT", "WORK", "RESUME"];
   const navigate = useNavigate();
   const [bgColor, setBgColor] = useState("#F3F2EE");
@@ -66,7 +67,7 @@ const NavBar = ({ type = "home", logo = "" }) => {
                 navigate("/resume");
                 window.scrollTo({ top: 0, left: 0, behavior: "auto" });
               } else if (text === "WORK") {
-                navigate("/work");
+                onWorkClick();
               } else if (text === "ABOUT") {
                 navigate("/about");
               }
@@ -81,7 +82,7 @@ const NavBar = ({ type = "home", logo = "" }) => {
             style={{ marginTop: "3px", marginRight: "4px" }}
           />
           <img
-           src={getInTouch}
+            src={getInTouch}
             alt="Get in Touch"
             style={{ width: "97px", height: "14px", cursor: "pointer" }}
           />
