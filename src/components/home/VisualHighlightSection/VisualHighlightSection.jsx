@@ -19,7 +19,7 @@ const VisualHighlightSection = ({}) => {
       // mt="127px"
       // mb="484px"
       sx={{ backgroundColor: "#F3F2EE" }}
-      height={"2360px"}
+      // height={"2360px"}
     >
       <Box ml="80px" display={"flex"} flexWrap={"wrap"} gap="19px">
         {loadImage &&

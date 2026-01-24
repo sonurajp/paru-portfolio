@@ -10,7 +10,7 @@ const Footer = () => (
   <Box
     sx={{
       background: "#F3F2EE",
-      height: "447px",
+      height: "779px",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
@@ -32,8 +32,7 @@ const Footer = () => (
       onClick={() => window.open(gmailLink, "_blank")}
       style={{
         marginBottom: "79px",
-        marginTop: "95px",
-        // marginLeft: "80px",
+        marginTop: "480px",
         width: "90%",
       }}
     />
