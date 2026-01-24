@@ -14,9 +14,12 @@ import {
   SportsApplicationGallery,
   HealthyFoodGallery,
 } from "../../components/work";
+import useScrollToTop from "../../hooks/useScrollToTop";
 
 const Work = () => {
   const { id } = useParams();
+  useScrollToTop();
+
   const showWorkGalleryByRoute = () => {
     switch (id) {
       case "rebuild-wholesale-portal":
