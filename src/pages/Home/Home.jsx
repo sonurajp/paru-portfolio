@@ -44,6 +44,7 @@ Portal`}
           right="-10%"
           textRight="294px"
           routeId="rebuild-wholesale-portal"
+          mr="10.8rem"
         />
         <ProjectSection
           bgText={" Social Platform for Education"}
@@ -62,6 +63,7 @@ Education`}
           imgWidth="870px"
           textRight="90.17px"
           routeId="social-platform"
+          mr="2rem"
         />
         <ProjectSection
           bgText={" Sports Application Design"}
@@ -80,6 +82,7 @@ Design`}
           imgWidth="600px"
           textRight="116px"
           routeId="sports-application"
+          mr="8.8rem"
         />
         <ProjectSection
           bgText={" Healthy Foods Onboarding Experience"}
@@ -96,6 +99,7 @@ Experience`}
           imgWidth="540px"
           textRight="75px"
           routeId="health-food"
+          mr="8.5rem"
         />
       </div>
       <MyRealisation />

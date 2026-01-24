@@ -16,6 +16,7 @@ const ProjectSection = ({
   imgWidth = "400px",
   textRight = "20%",
   routeId,
+  mr = "auto",
 }) => {
   const [inView, setInView] = useState(false);
   const [changeColor, setChangeColor] = useState(false);
@@ -125,7 +126,7 @@ const ProjectSection = ({
           display: "inline-block",
         }}
         // mr={bgText === " Social Platform for Education" ? "0px" : "202px"}
-        mr="auto"
+        mr={mr}
         mt="89px"
       >
         {loadImage && (
