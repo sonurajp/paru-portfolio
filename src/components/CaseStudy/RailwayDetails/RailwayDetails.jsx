@@ -98,7 +98,8 @@ const RailwayDetails = () => {
           sx={{
             position: "absolute",
             top: "2529px",
-            right: "333px",
+            right: "150px",
+
             display: "flex",
             flexDirection: "row-reverse",
             flexWrap: "wrap",

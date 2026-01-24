@@ -9,8 +9,10 @@ import ParadoxDetails from "../../components/CaseStudy/ParadoxDetails/ParadoxDet
 import { useParams } from "react-router-dom";
 import RailwayDetails from "../../components/CaseStudy/RailwayDetails/RailwayDetails";
 import WireFraming from "../../components/CaseStudy/RailwayDetails/components/WireFraming/WireFraming";
+import useScrollToTop from "../../hooks/useScrollToTop";
 const CaseStudy = () => {
   const { id } = useParams();
+  useScrollToTop();
   return (
     <>
       <CaseStudyProvider>
