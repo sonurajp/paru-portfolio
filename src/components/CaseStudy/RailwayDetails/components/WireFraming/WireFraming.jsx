@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import VerticalLine from "../../../VerticalLine/VerticalLine";
-import LazyImage from "../../../../LazyImage/LazyImage";
+import LazyImage from "../../../../ui/LazyImage/LazyImage";
 
 const WireFraming = () => {
   return (

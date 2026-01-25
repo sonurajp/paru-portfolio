@@ -4,7 +4,7 @@ import RebuildWholeSaleWorkGalleryImage1 from "../../../../assets/RebuildWholeSa
 import RebuildWholeSaleWorkGalleryImage2 from "../../../../assets/RebuildWholeSaleWorkGalleryImage2.svg";
 import RebuildWholeSaleWorkGalleryImage3 from "../../../../assets/RebuildWholeSaleWorkGalleryImage3.svg";
 import WorkGalleryText from "../components/WorkGalleryText/WorkGalleryText";
-import ArchBackground from "../../../ArchBackground/ArchBackground";
+import ArchBackground from "../../../ui/ArchBackground/ArchBackground";
 const RebuildWholeSaleWorkGallery = () => {
   return (
     <ArchBackground>
@@ -33,7 +33,6 @@ const RebuildWholeSaleWorkGallery = () => {
         </Box>
         <img src={RebuildWholeSaleWorkGalleryImage3} />
       </Box>
-      
     </ArchBackground>
   );
 };

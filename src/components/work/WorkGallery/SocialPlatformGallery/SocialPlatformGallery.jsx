@@ -1,5 +1,5 @@
 import React from "react";
-import ArchBackground from "../../../ArchBackground/ArchBackground";
+import ArchBackground from "../../../ui/ArchBackground/ArchBackground";
 import { Box } from "@mui/material";
 import CounterBox from "../components/CounterBox/CounterBox";
 

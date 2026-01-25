@@ -1,5 +1,5 @@
 import React from "react";
-import ArchBackground from "../../ArchBackground/ArchBackground";
+import ArchBackground from "../../ui/ArchBackground/ArchBackground";
 import { Box, Typography } from "@mui/material";
 import ParadoxDetailsCard from "./components/ParadoxDetailsCard/ParadoxDetailsCard";
 import { useParams } from "react-router-dom";
