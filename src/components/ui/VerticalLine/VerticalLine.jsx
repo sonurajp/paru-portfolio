@@ -1,6 +1,6 @@
 import React from "react";
 
-const VerticalLine = ({ height }) => {
+const VerticalLine = ({ height, top = 0 }) => {
   return (
     <hr
       style={{
@@ -11,7 +11,7 @@ const VerticalLine = ({ height }) => {
         margin: "0 auto",
         position: "absolute",
         left: "-5%",
-        top: "8%",
+        top: top,
         transform: "translateX(-50%)",
       }}
     />

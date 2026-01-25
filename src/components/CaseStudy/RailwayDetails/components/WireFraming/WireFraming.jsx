@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import VerticalLine from "../../../VerticalLine/VerticalLine";
+import VerticalLine from "../../../../ui/VerticalLine/VerticalLine";
 import LazyImage from "../../../../ui/LazyImage/LazyImage";
 
 const WireFraming = () => {
@@ -12,7 +12,7 @@ const WireFraming = () => {
 
       {/* AUTHENTICATION */}
       <Box position="relative" ml="5%">
-        <VerticalLine height="56px" />
+        <VerticalLine height="56px" top="8%" />
         <Typography fontWeight={600} fontSize="20px">
           Authentication
         </Typography>
