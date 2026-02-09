@@ -68,7 +68,7 @@ const NavBar = ({ type = "home", logo = "", onWorkClick = () => {} }) => {
                 navigate("/resume");
                 window.scrollTo({ top: 0, left: 0, behavior: "auto" });
               } else if (text === "WORK") {
-                onWorkClick();
+                navigate("/", { state: { scrollToWork: true } });
               } else if (text === "ABOUT") {
                 navigate("/about");
               }

@@ -17,12 +17,19 @@ const HeaderPart = () => {
             // onClick={handleDownload}
             sx={{
               padding: 0,
+              height: "40px",
+              width: "40px",
               // Optional: Ensure the button doesn't shift the text alignment
-              "&:hover": { backgroundColor: "transparent", opacity: 0.7 },
+              "&:hover": {
+                backgroundColor: "#fa9f03",
+                opacity: 0.7,
+                height: "40px",
+                width: "40px",
+              },
             }}
             aria-label="download"
           >
-            <img src={DownloadImage} alt="metro" height="14px" width="12.6px" />
+            <img src={DownloadImage} alt="metro" />
           </IconButton>
         </Box>
       </Box>

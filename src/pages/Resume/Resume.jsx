@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Box, Typography, Divider, IconButton } from "@mui/material";
+import { Box, IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import DownloadImage from "../../assets/DownloadImage.png";
 import HeaderPart from "./HeaderPart";
@@ -371,6 +371,28 @@ interaction.`,
   return (
     <Box display="flex" backgroundColor="#f3f2ee">
       <Box>
+        <IconButton
+          sx={{
+            padding: "8px",
+            position: "absolute",
+            top: "14px",
+            left: "1300px",
+            color: "black",
+            borderRadius: "50%",
+            width: "40px", // 👈 change this
+            height: "40px",
+            "&:hover": {
+              opacity: 0.7,
+              borderRadius: "50%",
+              width: "40px", // 👈 change this
+              height: "40px",
+            },
+          }}
+          aria-label="download"
+        >
+          X
+        </IconButton>
+
         <HeaderPart />
         <ResumeAbout />
         <ExperienceSection

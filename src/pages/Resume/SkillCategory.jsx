@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Link, Typography } from "@mui/material";
 
 const SkillCategory = ({ title, items, type }) => {
   return (
@@ -22,19 +22,21 @@ const SkillCategory = ({ title, items, type }) => {
         {items.map((item, index) => (
           <React.Fragment key={index}>
             {title.toUpperCase() === "PORTFOLIO" && (
-              <a
+              <Link
                 href="https://behance.net/"
                 target="_blank"
-                style={{
+                underline="none"
+                sx={{
                   color: "#484848",
-                  textDecoration: "none",
                   fontWeight: 400,
-
                   fontSize: "20px",
+                  "&:hover": {
+                    color: "#ff5832",
+                  },
                 }}
               >
                 {item}
-              </a>
+              </Link>
             )}
             {title.toUpperCase() !== "PORTFOLIO" && (
               <Typography

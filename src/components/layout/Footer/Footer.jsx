@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import FooterImage from "../../../assets/FooterImage.png";
-import FooterImageHover from "../../../assets/FooterImageHover.png"; // Adjust the import path as necessary
+import FooterArrow from "../../../assets/FooterArrow.png";
 import "./Footer.css";
 const email = "parvathy.26@outlook.com";
 const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
@@ -14,29 +13,30 @@ const Footer = () => (
       display: "flex",
       flexDirection: "column",
     }}
+    onClick={() => window.open(gmailLink, "_blank")}
   >
     {/* Slide-in Image CTA */}
-    <Typography
-      fontSize={"160px"}
-      mt="150px"
-      sx={{
-        color: "#010101",
-        ml: "72px",
-        "&:hover": { cursor: "pointer", color: "#ff5832" },
-      }}
-    >
-      GET IN TOUCH
-    </Typography>
-    {/* <img
-      src={FooterImageHover}
-      onClick={() => window.open(gmailLink, "_blank")}
-      style={{
-        // marginBottom: "79px",
-        marginTop: "112px",
-        marginBottom: "54px",
-        width: "90%",
-      }}
-    /> */}
+    <Box display="flex" alignItems={"center"} mt="150px" gap="45px">
+      <Typography
+        fontSize={"160px"}
+        sx={{
+          color: "#010101",
+          ml: "72px",
+          "&:hover": { cursor: "pointer", color: "#ff5832" },
+        }}
+      >
+        GET IN TOUCH
+      </Typography>
+      <img
+        src={FooterArrow}
+        onClick={() => window.open(gmailLink, "_blank")}
+        style={{
+          width: "115px",
+          height: "94px",
+        }}
+      />
+    </Box>
+
     <Box
       sx={{
         width: "100%",

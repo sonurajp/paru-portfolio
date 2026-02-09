@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Footer, NavBar } from "../../components/layout";
 import {
   HeroSection,
@@ -10,12 +10,25 @@ import {
 import oneMobile from "../../assets/oneMobile.png";
 import logo from "../../assets/logo.svg";
 import { Box } from "@mui/material";
+import { useLocation } from "react-router-dom";
 
 const Home = () => {
   const workRef = useRef(null);
+  const location = useLocation();
+  useEffect(() => {
+    if (location.state?.scrollToWork) {
+      setTimeout(() => {
+        workRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 100);
+    }
+  }, [location]);
   return (
     <>
       {/* <NavBar logo={logo} workRef={workRef} /> */}
+
       <NavBar
         logo={logo}
         onWorkClick={() => {
