@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Box, IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import DownloadImage from "../../assets/DownloadImage.png";
+import CloseIcon from "@mui/icons-material/Close";
 import HeaderPart from "./HeaderPart";
 import ResumeAbout from "./ResumeAbout";
 import ExperienceSection from "./ExperienceSection";
@@ -391,7 +391,7 @@ interaction.`,
           aria-label="download"
           onClick={() => navigate(-1)}
         >
-          X
+          <CloseIcon />
         </IconButton>
 
         <HeaderPart />
