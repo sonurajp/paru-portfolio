@@ -24,7 +24,7 @@ const HeaderPart = () => {
               color: "black",
               "&:hover": {
                 color: "#FF5832",
-                opacity: 0.7,
+                opacity: 1,
                 height: "40px",
                 width: "40px",
               },
