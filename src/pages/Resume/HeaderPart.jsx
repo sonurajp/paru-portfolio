@@ -1,5 +1,5 @@
 import { Box, IconButton, Typography } from "@mui/material";
-import DownloadImage from "../../assets/DownloadImage.png";
+import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 const HeaderPart = () => {
   return (
     <Box>
@@ -21,9 +21,10 @@ const HeaderPart = () => {
               padding: 0,
               height: "40px",
               width: "40px",
-              // Optional: Ensure the button doesn't shift the text alignment
+              color: "black",
               "&:hover": {
                 backgroundColor: "#fa9f03",
+                color: "black",
                 opacity: 0.7,
                 height: "40px",
                 width: "40px",
@@ -31,7 +32,7 @@ const HeaderPart = () => {
             }}
             aria-label="download"
           >
-            <img src={DownloadImage} alt="metro" />
+            <FileDownloadOutlinedIcon />
           </IconButton>
         </Box>
       </Box>
