@@ -3,8 +3,8 @@ import ArchBackground from "../../../ui/ArchBackground/ArchBackground";
 import { Box } from "@mui/material";
 import CounterBox from "../components/CounterBox/CounterBox";
 
-import SocialPlatformGalleryImage4 from "../../../../assets/SocialPlatformGalleryImage4.svg";
-import SocialPlatformGalleryImage5 from "../../../../assets/SocialPlatformGalleryImage5.svg";
+import SocialPlatformGalleryImage4 from "../../../../../public/assets/SocialPlatformGalleryImage4.svg";
+import SocialPlatformGalleryImage5 from "../../../../../public/assets/SocialPlatformGalleryImage5.svg";
 
 const SocialPlatformGallery = () => {
   return (

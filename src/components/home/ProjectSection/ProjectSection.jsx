@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Box, Typography } from "@mui/material";
-import uiux from "../../../assets/uiux.svg"; // Adjust the import path as necessary
+import uiux from "../../../../public/assets/uiux.svg"; // Adjust the import path as necessary
 import { useNavigate } from "react-router-dom";
 import useLazloadHook from "../../../hooks/useLazloadHook";
 const ProjectSection = ({

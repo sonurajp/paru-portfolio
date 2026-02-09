@@ -5,7 +5,7 @@ import { Footer, NavBar } from "../../components/layout";
 import WorkIntro from "../../components/work/WorkIntro";
 import "./Work.css";
 
-import leftArrow from "../../assets/leftArrow.svg";
+import leftArrow from "../../../public/assets/leftArrow.svg";
 import WorkProvider from "../../components/work/components/WorkProvider/WorkProvider";
 import { ProjectShowcase } from "../../components/work/components";
 import {

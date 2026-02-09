@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./About.css";
-import navLogo from "../../assets/logo.svg";
+import navLogo from "../../../public/assets/logo.svg";
 import NavBar from "../../components/layout/NavBar/NavBar";
 import { Box, Typography } from "@mui/material";
 import AboutProvider from "./store/AboutProvider";

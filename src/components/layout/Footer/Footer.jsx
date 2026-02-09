@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import FooterArrow from "../../../assets/FooterArrow.png";
-import RightOrange from "../../../assets/RightOrange.svg";
+import FooterArrow from "../../../../public/assets/FooterArrow.png";
+import RightOrange from "../../../../public/assets/RightOrange.svg";
 import "./Footer.css";
 const email = "parvathy.26@outlook.com";
 const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;

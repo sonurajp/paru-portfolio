@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Box, Typography } from "@mui/material";
-import getInTouchSmiley from "../../../assets/getInTouchSmiley.svg";
+import getInTouchSmiley from "../../../../public/assets/getInTouchSmiley.svg";
 
 import { useNavigate } from "react-router-dom";
 const NavBar = ({ type = "home", logo = "", onWorkClick = () => {} }) => {

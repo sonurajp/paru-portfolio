@@ -1,6 +1,6 @@
 import React from "react";
 import { Footer, NavBar } from "../../components/layout";
-import leftArrow from "../../assets/leftArrow.svg";
+import leftArrow from "../../../public/assets/logo.svg";
 import CaseStudyProvider from "./store/CaseStudyProvider";
 import CaseStudyIntroduction from "../../components/CaseStudy/CaseStudyIntroduction/CaseStudyIntroduction";
 import Summary from "../../components/CaseStudy/Summary/Summary";
