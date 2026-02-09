@@ -93,7 +93,7 @@ const ProjectSection = ({
             color: "#000",
             fontFamily: "Geologica, sans-serif",
             textAlign: "left",
-            whiteSpace: "nowrap",
+            // whiteSpace: "nowrap",
             cursor: "pointer",
             "&:hover": { color: "#FF5832" },
             whiteSpace: "pre-wrap",

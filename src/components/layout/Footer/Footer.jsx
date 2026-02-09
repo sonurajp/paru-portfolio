@@ -10,44 +10,45 @@ const Footer = () => (
   <Box
     sx={{
       background: "#F3F2EE",
-      height: "799px",
+      height: "460px",
       display: "flex",
       flexDirection: "column",
-      alignItems: "center",
     }}
   >
     {/* Slide-in Image CTA */}
-
-    <img
+    <Typography
+      fontSize={"160px"}
+      mt="150px"
+      sx={{
+        color: "#010101",
+        ml: "72px",
+        "&:hover": { cursor: "pointer", color: "#ff5832" },
+      }}
+    >
+      GET IN TOUCH
+    </Typography>
+    {/* <img
       src={FooterImageHover}
-      className="footer-image-slide"
-      /* onMouseEnter={(e) => {
-        e.currentTarget.src = FooterImageHover;
-        e.currentTarget.classList.add("footer-image-slide");
-      }}*/
-      /* onMouseLeave={(e) => {
-        e.currentTarget.src = FooterImage;
-        e.currentTarget.classList.remove("footer-image-slide");
-      }}*/
       onClick={() => window.open(gmailLink, "_blank")}
       style={{
-        marginBottom: "79px",
-        marginTop: "480px",
+        // marginBottom: "79px",
+        marginTop: "112px",
+        marginBottom: "54px",
         width: "90%",
       }}
-    />
+    /> */}
     <Box
       sx={{
         width: "100%",
         display: "flex",
-        alignItems: "center",
-        justifyContent: "space-around",
+        ml: "90px",
+        mt: "-1%",
       }}
     >
       <Typography fontSize="14px">
         parvathy.26@outlook.com &nbsp;+91 9500485529
       </Typography>
-      <Box mr={25}>
+      <Box ml={1} mt="-.2%">
         <a
           href="https://behance.net/"
           target="_blank"
@@ -79,6 +80,7 @@ const Footer = () => (
           color: "rgba(118, 118, 118, 1)",
           fontSize: "14px",
         }}
+        ml="640px"
       >
         Designed by Parvathy T A
       </Typography>
