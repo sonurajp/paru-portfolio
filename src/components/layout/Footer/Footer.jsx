@@ -13,10 +13,15 @@ const Footer = () => (
       display: "flex",
       flexDirection: "column",
     }}
-    onClick={() => window.open(gmailLink, "_blank")}
   >
     {/* Slide-in Image CTA */}
-    <Box display="flex" alignItems={"center"} mt="150px" gap="45px">
+    <Box
+      display="flex"
+      alignItems={"center"}
+      mt="150px"
+      gap="45px"
+      onClick={() => window.open(gmailLink, "_blank")}
+    >
       <Typography
         fontSize={"160px"}
         sx={{
@@ -63,7 +68,7 @@ const Footer = () => (
           Behance
         </a>
         <a
-          href="https://linkedin.com/"
+          href="https://www.linkedin.com/in/parvathy-t-a-148a43104/"
           target="_blank"
           style={{
             color: "#111",

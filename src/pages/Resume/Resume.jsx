@@ -389,6 +389,7 @@ interaction.`,
             },
           }}
           aria-label="download"
+          onClick={() => navigate(-1)}
         >
           X
         </IconButton>

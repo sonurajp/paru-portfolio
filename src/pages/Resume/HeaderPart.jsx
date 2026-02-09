@@ -14,6 +14,8 @@ const HeaderPart = () => {
             PARVATHY T A
           </Typography>
           <IconButton
+            href="/ParvathyResume.pdf"
+            download="Parvathy_Resume.pdf"
             // onClick={handleDownload}
             sx={{
               padding: 0,
