@@ -1,5 +1,5 @@
 import React from "react";
-import ArchBackground from "../../ArchBackground/ArchBackground";
+import ArchBackground from "../../ui/ArchBackground/ArchBackground";
 import { Typography, Box } from "@mui/material";
 import PersonaDetails from "./components/PersonaDetails/PersonaDetails";
 import { useCaseStudyContext } from "../../../pages/CaseStudy/store/CaseStudyProvider";
@@ -98,7 +98,8 @@ const RailwayDetails = () => {
           sx={{
             position: "absolute",
             top: "2529px",
-            right: "333px",
+            right: "150px",
+
             display: "flex",
             flexDirection: "row-reverse",
             flexWrap: "wrap",

@@ -1,6 +1,6 @@
 import React from "react";
 import { Footer, NavBar } from "../../components/layout";
-import leftArrow from "../../assets/leftArrow.svg";
+import leftArrow from "../../../public/assets/logo.svg";
 import CaseStudyProvider from "./store/CaseStudyProvider";
 import CaseStudyIntroduction from "../../components/CaseStudy/CaseStudyIntroduction/CaseStudyIntroduction";
 import Summary from "../../components/CaseStudy/Summary/Summary";
@@ -9,8 +9,10 @@ import ParadoxDetails from "../../components/CaseStudy/ParadoxDetails/ParadoxDet
 import { useParams } from "react-router-dom";
 import RailwayDetails from "../../components/CaseStudy/RailwayDetails/RailwayDetails";
 import WireFraming from "../../components/CaseStudy/RailwayDetails/components/WireFraming/WireFraming";
+import useScrollToTop from "../../hooks/useScrollToTop";
 const CaseStudy = () => {
   const { id } = useParams();
+  useScrollToTop();
   return (
     <>
       <CaseStudyProvider>

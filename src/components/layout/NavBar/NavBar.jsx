@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Box, Typography } from "@mui/material";
-import getInTouch from "../../../assets/getintouch.svg";
+import getInTouchSmiley from "../../../../public/assets/getInTouchSmiley.svg";
+
 import { useNavigate } from "react-router-dom";
-const NavBar = ({ type = "home", logo = "" }) => {
+const NavBar = ({ type = "home", logo = "", onWorkClick = () => {} }) => {
   const navText = ["ABOUT", "WORK", "RESUME"];
   const navigate = useNavigate();
   const [bgColor, setBgColor] = useState("#F3F2EE");
   const [navlogo, setNavLogo] = useState(logo);
+  const email = "parvathy.26@outlook.com";
+  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -16,6 +19,8 @@ const NavBar = ({ type = "home", logo = "" }) => {
 
       if (scrollY < heroHeight) {
         setBgColor("#F3F2EE");
+        // ensure logo is visible when near top
+        setNavLogo(logo);
       } else {
         setBgColor("transparent");
         setNavLogo("");
@@ -26,13 +31,12 @@ const NavBar = ({ type = "home", logo = "" }) => {
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [logo]); // re-run if logo prop changes
   return (
     <Box
       display="flex"
       justifyContent="space-between"
       backgroundColor={type === "home" ? bgColor : "transparent"}
-      // backgroundColor={bgColor}
       sx={{
         position: "sticky",
         top: 0,
@@ -40,10 +44,12 @@ const NavBar = ({ type = "home", logo = "" }) => {
       }}
     >
       <img
-        src={type === "home" ? navlogo : logo}
+        src={navlogo || logo}
+        alt="Parvathy logo"
+        role="button"
         style={{ marginLeft: "124px", marginTop: "18px", cursor: "pointer" }}
         onClick={() => {
-          type === "work" ? navigate(-1) : "";
+          navigate("/");
         }}
       />
       <Box display="flex" gap={3} mr="124px" mt="30px">
@@ -55,24 +61,68 @@ const NavBar = ({ type = "home", logo = "" }) => {
             sx={{
               color: "#000",
               fontWeight: "600",
-              "&:hover": {
-                cursor: "pointer",
-              },
+              "&:hover": { cursor: "pointer", color: "#ff5832" },
+            }}
+            onClick={() => {
+              if (text === "RESUME") {
+                navigate("/resume");
+                window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+              } else if (text === "WORK") {
+                navigate("/", { state: { scrollToWork: true } });
+              } else if (text === "ABOUT") {
+                navigate("/about");
+              }
             }}
           >
             {text}
           </Typography>
         ))}
-        <Box display="flex" justifyContent="center" mt="3px">
+        <Box
+          display="flex"
+          justifyContent="center"
+          onClick={() => window.open(gmailLink, "_blank")}
+        >
           <div
             className="blink-dot"
-            style={{ marginTop: "3px", marginRight: "4px" }}
+            style={{ marginTop: "5px", marginRight: "4px" }}
           />
-          <img
-            src={getInTouch}
-            alt="Get in Touch"
-            style={{ width: "97px", height: "14px", cursor: "pointer" }}
-          />
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            gap={"4px"}
+            sx={{
+              color: "#000",
+              "&:hover": { cursor: "pointer", color: "#ff5832" },
+            }}
+          >
+            <Typography
+              fontSize="12px"
+              fontWeight="medium"
+              sx={{
+                fontWeight: "600",
+              }}
+              onClick={() => window.open(gmailLink, "_blank")}
+            >
+              GET IN{" "}
+            </Typography>
+
+            <img
+              src={getInTouchSmiley}
+              alt="Get in Touch"
+              style={{ width: "10px", height: "10px", cursor: "pointer" }}
+            />
+            <Typography
+              fontSize="12px"
+              fontWeight="medium"
+              sx={{
+                fontWeight: "600",
+              }}
+              onClick={() => window.open(gmailLink, "_blank")}
+            >
+              TOUCH
+            </Typography>
+          </Box>
         </Box>
       </Box>
     </Box>

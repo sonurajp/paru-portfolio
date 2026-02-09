@@ -11,17 +11,19 @@
   color: rgba(68, 68, 68, 1);
   white-space: pre-wrap;
   text-align: left;
-  max-width: 387px;
+  max-width: auto;
 }
 
 .summary-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
   gap: 3rem;
+  margin-top: 100px;
   grid-template-areas:
-    "about-client responsibility project-overview"
-    "about-client  work-years  industry";
+    "about-client about-client"
+    "responsibility project-overview"
+    "work-years industry";
 }
 
 .about-client {
@@ -30,7 +32,7 @@
 
 .responsibility {
   grid-area: responsibility;
-  max-width: 266px;
+  max-width: auto;
 }
 
 .work-years {

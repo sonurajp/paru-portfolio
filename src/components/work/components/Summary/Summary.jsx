@@ -15,7 +15,7 @@ const Summary = () => {
   } = data;
 
   return (
-    <Box mt="280px" width="90vw" maxWidth="1200px" ml="0">
+    <Box mt="4vw" width="90vw" maxWidth="1200px" ml="0">
       <div className="summary-grid">
         {/* About Client - spans 2 rows */}
         <div className="about-client">

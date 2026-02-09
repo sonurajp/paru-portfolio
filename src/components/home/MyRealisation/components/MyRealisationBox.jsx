@@ -21,9 +21,9 @@ const MyRealisationBox = ({ headText, index, route }) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       sx={{
-        width: "1000px",
+        width: "78vw",
         transition: "all 0.3s ease",
-        cursor: route && "pointer",
+        cursor: route ? "pointer" : "default",
       }}
       mb="32px"
       mt={index === 0 ? "0px" : "32px"}
@@ -37,37 +37,45 @@ const MyRealisationBox = ({ headText, index, route }) => {
         sx={{
           color: hovered ? "#FF5832" : "#343434",
           transition: "color 0.3s ease",
+          whiteSpace: "nowrap",
         }}
       >
         {headText}
       </Typography>
 
-      {hovered && chipDataMap[headText] && (
-        <Box display="flex" gap={1} justifyContent="flex-end">
-          {chipDataMap[headText].map((chip, index) => (
-            <Chip
-              key={index}
-              label={chip}
-              variant="outlined"
-              sx={{
-                padding: " 0 8px",
-                borderRadius: "32px",
-                fontSize: "1rem",
-                color: "#343434",
-                fontWeight: 400,
-                background:
-                  "linear-gradient(to right, #e8e8e8 0%, transparent 100%)",
-                height: "37px",
-                border: "1px solid transparent",
-                opacity: 0,
-                transform: "rotateY(90deg)",
-                animation: "flipIn 0.4s ease-out forwards",
-                animationDelay: `${index * 0.1}s`,
-              }}
-            />
-          ))}
-        </Box>
-      )}
+      <Box
+        display="flex"
+        gap={1}
+        justifyContent="flex-end"
+        sx={{
+          flex: 1,
+          pointerEvents: "none", // 👈 CRITICAL
+        }}
+      >
+        {chipDataMap[headText]?.map((chip, index) => (
+          <Chip
+            key={index}
+            label={chip}
+            variant="outlined"
+            sx={{
+              padding: "0 8px",
+              borderRadius: "32px",
+              fontSize: "1rem",
+              color: "#343434",
+              fontWeight: 400,
+              background:
+                "linear-gradient(to right, #e8e8e8 0%, transparent 100%)",
+              height: "37px",
+              border: "1px solid transparent",
+
+              opacity: hovered ? 1 : 0,
+              transform: hovered ? "rotateY(0deg)" : "rotateY(90deg)",
+              transition: "all 0.4s ease",
+              transitionDelay: `${index * 0.08}s`,
+            }}
+          />
+        ))}
+      </Box>
     </Box>
   );
 };

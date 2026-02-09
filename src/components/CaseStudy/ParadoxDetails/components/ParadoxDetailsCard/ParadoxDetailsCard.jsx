@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import VerticalLine from "../VerticalLine/VerticalLine";
+import VerticalLine from "../../../../ui/VerticalLine/VerticalLine";
 
 const ParadoxDetailsCard = ({ data }) => {
   return (

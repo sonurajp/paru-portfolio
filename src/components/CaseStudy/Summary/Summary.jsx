@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import { useCaseStudyContext } from "../../../pages/CaseStudy/store/CaseStudyProvider";
 import { useParams } from "react-router-dom";
-import VerticalLine from "../VerticalLine/VerticalLine";
+import VerticalLine from "../../ui/VerticalLine/VerticalLine";
 import SummaryCard from "./components/SummaryCard/SummaryCard";
 import WhatHappened from "./components/WhatHappened/WhatHappened";
 import Competitors from "./components/Competitors/Competitors";

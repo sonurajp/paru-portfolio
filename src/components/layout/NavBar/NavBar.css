@@ -1,0 +1,7 @@
+.get-in-touch {
+  fill: #000; /* default */
+}
+
+.get-in-touch:hover {
+  fill: #ff5832; /* orange */
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
-import ArchBackground from "../../../ArchBackground/ArchBackground";
+import ArchBackground from "../../../ui/ArchBackground/ArchBackground";
 const HealthyFoodGallery = () => {
   return (
     <ArchBackground height="1029px">

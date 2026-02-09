@@ -18,6 +18,7 @@ const ProjectShowcase = () => {
           mt="247px"
           display="flex"
           mb="300px"
+          mr="auto"
           justifyContent="flex-end"
         >
           <Box display="flex" gap="32px" mt="320px">
@@ -51,7 +52,7 @@ const ProjectShowcase = () => {
               height: "100%",
               width: prjctData.width || "100%",
               objectFit: "cover",
-              mr: "1.875rem",
+              mr: "30px",
               ml: "235px", // Keep default margin-left for 125% zoom
 
               "@media (max-width:1280px)": {
