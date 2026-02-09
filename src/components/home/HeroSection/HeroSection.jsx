@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Box, Typography, Chip, Stack } from "@mui/material";
-import research from "../../../assets/research.svg";
-import userStories from "../../../assets/userStories.svg";
-import appDesign from "../../../assets/appDesign.svg";
-import ecommerce from "../../../assets/ecommerce.svg";
-import userflow from "../../../assets/userFlow.svg";
-import Wireframing from "../../../assets/Wireframing.svg";
+import research from "../../../../public/assets/research.svg";
+import userStories from "../../../../public/assets/userStories.svg";
+import appDesign from "../../../../public/assets/appDesign.svg";
+import ecommerce from "../../../../public/assets/ecommerce.svg";
+import userflow from "../../../../public/assets/userFlow.svg";
+import Wireframing from "../../../../public/assets/Wireframing.svg";
 const tags = [
   "Research",
   "Userflow",

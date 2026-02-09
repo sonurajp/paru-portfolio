@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import FooterImage from "../../../assets/FooterImage.png";
-import FooterImageHover from "../../../assets/FooterImageHover.png"; // Adjust the import path as necessary
+import FooterArrow from "../../../../public/assets/FooterArrow.png";
+import RightOrange from "../../../../public/assets/RightOrange.svg";
 import "./Footer.css";
 const email = "sonurajp49@gmail.com";
 const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;

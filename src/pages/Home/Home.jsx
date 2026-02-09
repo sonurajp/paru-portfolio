@@ -7,8 +7,9 @@ import {
   VisualHighlightSection,
 } from "../../components/home";
 
-import oneMobile from "../../assets/oneMobile.png";
-import logo from "../../assets/logo.svg";
+import oneMobile from "../../../public/assets/oneMobile.png";
+import logo from "../../../public/assets/logo.svg";
+import { useLocation } from "react-router-dom";
 
 const Home = () => {
   return (

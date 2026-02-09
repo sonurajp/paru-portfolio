@@ -1,6 +1,6 @@
 import React from "react";
-import Arch from "../../assets/Arch.svg";
-import { Box, Typography } from "@mui/material";
+import Arch from "../../../../public/assets/Arch.svg";
+
 const ArchBackground = ({ children, height = "100%" }) => {
   return (
     <div style={{ position: "relative" }}>

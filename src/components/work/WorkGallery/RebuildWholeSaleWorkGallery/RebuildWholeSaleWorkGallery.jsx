@@ -1,8 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import RebuildWholeSaleWorkGalleryImage1 from "../../../../assets/RebuildWholeSaleWorkGalleryImage1.svg";
-import RebuildWholeSaleWorkGalleryImage2 from "../../../../assets/RebuildWholeSaleWorkGalleryImage2.svg";
-import RebuildWholeSaleWorkGalleryImage3 from "../../../../assets/RebuildWholeSaleWorkGalleryImage3.svg";
+import RebuildWholeSaleWorkGalleryImage1 from "../../../../../public/assets/RebuildWholeSaleWorkGalleryImage1.svg";
+import RebuildWholeSaleWorkGalleryImage2 from "../../../../../public/assets/RebuildWholeSaleWorkGalleryImage2.svg";
+import RebuildWholeSaleWorkGalleryImage3 from "../../../../../public/assets/RebuildWholeSaleWorkGalleryImage3.svg";
 import WorkGalleryText from "../components/WorkGalleryText/WorkGalleryText";
 import ArchBackground from "../../../ArchBackground/ArchBackground";
 const RebuildWholeSaleWorkGallery = () => {

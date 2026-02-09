@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Box, Typography } from "@mui/material";
-import getInTouch from "../../../assets/getintouch.svg";
+import getInTouchSmiley from "../../../../public/assets/getInTouchSmiley.svg";
+
 import { useNavigate } from "react-router-dom";
 const NavBar = ({ type = "home", logo = "" }) => {
   const navText = ["ABOUT", "WORK", "RESUME"];
